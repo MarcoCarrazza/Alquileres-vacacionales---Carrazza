@@ -1,28 +1,48 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: .08rem;
+
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 25px;    
 }
 
 header{
-    display: flex;
-    justify-content: space-between;
     padding-top: 10px;
     align-items: center;
-    background: #0533ed;
+    background-image: linear-gradient(rgb(61, 7, 169), rgb(5, 51, 237));
     min-height: 100px;
 }
 
+.main-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
 .menu-header{
     list-style: none;
     display: flex;
     justify-content: space-around;
-    width: 30vw;
+    min-width: 450px;
     padding-right: 30px;
 }
 
 .text-menu{
     text-decoration: none;
-    color: #fff;
+    color: #fff;    
+}
+
+.text-menu:hover{
+    text-decoration: underline;
+    transition-duration: 2s;
 }
 
 #logo{
@@ -31,7 +51,7 @@ header{
 }
 
 .welcome{
-    background: #0533ed;
+    /* background: #0533ed; */
     color: #fff;
     display: flex;
     justify-content: center;
@@ -56,17 +76,17 @@ header{
     min-width: 120px;
     height: 35px;
     color: #0533ed;
-    border: none;
+    border: solid 2px #fff;
     border-radius: 30px;
     margin-top: 30px;
 }
 
 .search-bar{
     display: flex;
-    background: #0533ed;
     justify-content: center;
     width: 100%;
-    min-height: 270px;
+    padding-top: 50px;
+    min-height: 200px;
 }
 
 .elements{
@@ -86,4 +106,35 @@ header{
 
 .search-btn{
     margin-top: 40px;
+}
+
+.title-activities{
+    text-align: center;
+    margin: 47px 0;
+}
+
+.activities{
+    margin: auto;
+    display: table;
+}
+
+.activities-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90vw;
+}
+
+.img-x2{
+    width: 65%;
+    height: 250px;
+    padding-bottom: 10px;
+    object-fit: cover;
+}
+
+.img-x1{
+    width: 34%;
+    height: 250px;
+    padding-bottom: 10px;
+    object-fit: cover;
 }
