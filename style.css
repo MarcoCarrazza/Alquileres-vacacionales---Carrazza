@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    align-items: center;
+    background: #0533ed;
+    min-height: 100px;
+}
+
+.menu-header{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 30vw;
+    padding-right: 30px;
+}
+
+.text-menu{
+    text-decoration: none;
+    color: #fff;
+}
+
+#logo{
+    width: 100px;
+    padding-left: 50px;
+}
+
+.welcome{
+    background: #0533ed;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    word-wrap: break-word;
+    padding-top: 70px;
+}
+
+.title-title{
+    padding-bottom: 15px;
+}
+
+.login-btn{
+    background: #2cd4d9;
+    min-width: 120px;
+    height: 35px;
+    color: #0533ed;
+    border: none;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.search-bar{
+    display: flex;
+    background: #0533ed;
+    justify-content: center;
+    width: 100%;
+    min-height: 270px;
+}
+
+.elements{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-items{
+    height: 35px;
+    margin-top: 40px;
+    width: 200px;
+    border-radius: 6px;
+    border: none;
+    text-align: center;
+}
+
+.search-btn{
+    margin-top: 40px;
+}

@@ -11,48 +11,89 @@
 <body>
     <header>
         <!--Zona navegable (menú)-->
+        <div class="logo-menu">
+            <img src="images/Logo.png" alt="" id="logo">
+        </div>
         <nav>
             <!--INSERTAR icono (por lo que inspeccione en otros sitios, se hace con la etiquera <a> que aun no vimos)-->
-            <ul>
+            <ul class="menu-header">
                 <li>
-                    <a href="alquileres.html">Alquileres</a>
+                    <a class="text-menu" href="alquileres.html">Alquileres</a>
                 </li>
                 <li>
-                    <a href="mis-reservas.html">Mis reservas</a>
+                    <a class="text-menu" href="mis-reservas.html">Mis reservas</a>
                 </li>
                 <li>
-                    <a href="quienes-somos.html">Quienes somos</a>
+                    <a class="text-menu" href="quienes-somos.html">Quienes somos</a>
                 </li>
                 <li>
-                    <a href="contacto.html">Contacto</a>
+                    <a class="text-menu" href="contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section> <!--Seccion 1: Buscador-->
-            <p>TITULO DE PROMOCION DEL SITIO</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officia est tempora hic nihil assumenda tenetur nostrum magni esse optio nam cupiditate, ipsum totam excepturi beatae ab quam animi quas.</p>
-            
-            <!--Aqui viene el boton de Iniciar sesion-->
-
-            <section> <!--Esta seccion contiene los elementos propios del buscador-->
-                <!--Lista desplegable "Que estas buscando?"-->
-                <!--Menu de calendario-->
-                <!--Lista desplegable de cantidad de huespedes-->
-                <!--Boton BUSCAR-->
-            </section>
+        <section class="welcome"> <!--Seccion 1: Buscador-->
+            <div class="title">
+                <h1 class="title-title">TITULO DE PROMOCION DEL SITIO</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officia est tempora hic nihil assumenda tenetur nostrum magni esse optio nam cupiditate, ipsum totam excepturi beatae ab quam animi quas.</p>
+                <button class="login-btn">Iniciar sesión</button>
+            </div>
         </section>
+        
+        <section class="search-bar"> <!--Esta seccion contiene los elementos propios del buscador-->
+            <div class="elements">
+                <!--Lista desplegable "Que estas buscando?"-->
+                <select name="search-items" class="search-items" id="">
+                    <option value="" selected disabled hidden>Que estás buscando?</option>
+                    <option value="casas">Casas</option>
+                    <option value="departamentos">Departamentos</option>
+                    <option value="cabanas">Cabañas</option>
+                    <option value="bungalows">Bungalows</option>
+                    <option value="complejos">Complejos</option>
+                </select>
+                <!--Menu de calendario-->
+                <button class="search-items">Check in - Check out</button>
+                <!--Lista desplegable de cantidad de huespedes-->
+                <select name="people-set" class="search-items" id="">
+                    <option value="" selected disabled hidden>2 personas - 1 habitación</option>
+                    <option value="1">1 persona</option>
+                    <option value="2">2 persona</option>
+                    <option value="3">3 persona</option>
+                    <option value="4">4 persona</option>
+                    <option value="5">5 persona</option>
+                    <option value="6">6 persona</option>
+                    <option value="7">7 persona</option>
+                    <option value="8">8 persona</option>
+                    <option value="9">9 persona</option>
+                    <option value="10">10 persona</option>
+                    <option value="11">11 persona</option>
+                    <option value="12">12 persona</option>
+                    <option value="13">13 persona</option>
+                    <option value="14">14 persona</option>
+                    <option value="15">15 persona</option>
+                    <option value="16">16 persona</option>
+                    <option value="17">17 persona</option>
+                    <option value="18">18 persona</option>
+                    <option value="19">19 persona</option>
+                    <option value="20">20 persona</option>
+                </select>
+                <!--Boton BUSCAR-->
+                <button class="login-btn search-btn">Buscar</button>
+            </div>
+            
+        </section>
+        
         <section> <!--Seccion 2: Actividades-->
             <p>¿Porque elegir nuestra ciudad para tus vacaciones?</p>
             
             <!--Aca se inserta la grilla de imagenes con actividades que se pueden hacer en la ciudad-->
-            <img src="Images/Bicicleta.jpg" alt=""> <!--Imagen de actividad 1-->
-            <img src="Images/Bicicleta.jpg" alt=""> <!--Imagen de actividad 2-->
-            <img src="Images/Bicicleta.jpg" alt=""> <!--Imagen de actividad 3-->
-            <img src="Images/Bicicleta.jpg" alt=""> <!--Imagen de actividad 4-->
-            <img src="Images/Bicicleta.jpg" alt=""> <!--Imagen de actividad 5-->
-            <img src="Images/Bicicleta.jpg" alt=""> <!--Imagen de actividad 6-->
+            <img src="images/Bicicleta.jpg" alt=""> <!--Imagen de actividad 1-->
+            <img src="images/Bicicleta.jpg" alt=""> <!--Imagen de actividad 2-->
+            <img src="images/Bicicleta.jpg" alt=""> <!--Imagen de actividad 3-->
+            <img src="images/Bicicleta.jpg" alt=""> <!--Imagen de actividad 4-->
+            <img src="images/Bicicleta.jpg" alt=""> <!--Imagen de actividad 5-->
+            <img src="images/Bicicleta.jpg" alt=""> <!--Imagen de actividad 6-->
         </section>
         <section> <!--Seccion 3: Porque elegirnos-->
             <p>¿Porque elegirnos?</p>
