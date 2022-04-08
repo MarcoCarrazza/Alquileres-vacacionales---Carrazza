@@ -4,28 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Alquileres</title>
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <!--Zona navegable (menú)-->
-        <nav>
-            <!--INSERTAR icono (por lo que inspeccione en otros sitios, se hace con la etiquera <a> que aun no vimos)-->
-            <ul>
-                <li>
-                    <a href="alquileres.html">Alquileres</a>
-                </li>
-                <li>
-                    <a href="mis-reservas.html">Mis reservas</a>
-                </li>
-                <li>
-                    <a href="quienes-somos.html">Quienes somos</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="main-menu">
+            <div class="logo-menu"> <!--LOGO-->
+                <a href="index.html">
+                    <img src="images/logo-blanco.png" alt="" id="logo-menu">
+                </a>
+            </div>
+            <nav> <!--MENU SUPERIOR-->
+                <ul class="menu-header"> <!--MENU SUPERIOR-->
+                    <li>
+                        <a class="text-menu" href="alquileres.html">Alquileres</a>
+                    </li>
+                    <li>
+                        <a class="text-menu" href="mis-reservas.html">Mis reservas</a>
+                    </li>
+                    <li>
+                        <a class="text-menu" href="quienes-somos.html">Quienes somos</a>
+                    </li>
+                    <li>
+                        <a class="text-menu" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>    
+        </div>
     </header>
+    <main>
+        <div class="alq-sch">
+            <!--INSERTAR MISMO BUSCADOR QUE INDEX-->
+        </div>
+        <div class="alq-main">
+            <div class="alq-container">
+                <div class="alq-img">
+                    <!--Aqui se agrega el contenedor de fotos de la propiedad-->
+                    <img src="images/casa.jpg" alt="">
+                </div>
+                <div class="alq-desc">
+                    <h3 class="alq-title">Casa con pileta p/ 8 pesonas</h3>
+                    <p class="alq-sku">Cod: 252612</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, esse. Quod recusandae iusto asperiores laudantium id repellendus quisquam ullam hic. Eius, corporis. Ullam officiis repellendus omnis, placeat recusandae distinctio! Repellat?</p>
+                    <div>
+                        <button class="alq-btn"><strong>Reservar ahora!</strong></button>
+                        <button class="alq-btn"><strong>Hacer una consulta</strong></button>
+                    </div>   
+                    <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.6943112390504!2d-58.508576985106146!3d-33.011833882520534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95baa9d302fc36a7%3A0x271df65692b95feb!2sLeandro%20N.%20Alem%20234%2C%20Gualeguaych%C3%BA%2C%20Entre%20R%C3%ADos!5e0!3m2!1sen!2sar!4v1649449999085!5m2!1sen!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
+                </div>
+            </div>
+
+            <div class="alq-container">
+                <div class="alq-img">
+                    <!--Aqui se agrega el contenedor de fotos de la propiedad-->
+                    <img src="images/casa.jpg" alt="">
+                </div>
+                <div class="alq-desc">
+                    <h3 class="alq-title">Casa con pileta p/ 8 pesonas</h3>
+                    <p class="alq-sku">Cod: 252612</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, esse. Quod recusandae iusto asperiores laudantium id repellendus quisquam ullam hic. Eius, corporis. Ullam officiis repellendus omnis, placeat recusandae distinctio! Repellat?</p>
+                    <div>
+                        <button class="alq-btn"><strong>Reservar ahora!</strong></button>
+                        <button class="alq-btn"><strong>Hacer una consulta</strong></button>
+                    </div>   
+                    <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.6943112390504!2d-58.508576985106146!3d-33.011833882520534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95baa9d302fc36a7%3A0x271df65692b95feb!2sLeandro%20N.%20Alem%20234%2C%20Gualeguaych%C3%BA%2C%20Entre%20R%C3%ADos!5e0!3m2!1sen!2sar!4v1649449999085!5m2!1sen!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

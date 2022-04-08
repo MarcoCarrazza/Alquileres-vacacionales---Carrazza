@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Inicio</title>
-    <link rel="shortcut icon" href="MiIcono.ico" type="image/x-icon"> <!--Aún no tengo el logo pero ya dejo la línea escrita-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <!--Zona navegable (menú)-->
         <div class="main-menu">
             <div class="logo-menu"> <!--LOGO-->
-                <img src="images/Logo.png" alt="" id="logo">
+                <img src="images/logo-blanco.png" alt="" id="logo-menu">
             </div>
             <nav> <!--MENU SUPERIOR-->
                 <ul class="menu-header"> <!--MENU SUPERIOR-->
@@ -35,11 +35,11 @@
                 </ul>
             </nav>    
         </div>
-                <section class="welcome">
-            <div class="title">
+        <section class="welcome-container">
+            <div class="welcome-title">
                 <h1 class="title-title">VENÍ A GUALEGUAYCHÚ!</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officia est tempora hic nihil assumenda tenetur nostrum magni esse optio nam cupiditate, ipsum totam excepturi beatae ab quam animi quas.</p>
-                <button class="login-btn">Iniciar sesión</button>
+                <button class="login-btn"><strong>Iniciar sesión</strong></button>
             </div>
         </section>
         
@@ -81,87 +81,130 @@
                     <option value="20">20 persona</option>
                 </select>
                 <!--Boton BUSCAR-->
-                <button class="login-btn search-btn">Buscar</button>
+                <button class="login-btn search-btn"><strong>Buscar</strong></button>
             </div>
             
         </section>
     </header>
     <main>
-        
-        
         <section class="activities"> <!--Seccion 2: Actividades-->
             <h2 class="title-activities">¿Porque elegir nuestra ciudad para tus vacaciones?</h2>
             
             <!--Aca se inserta la grilla de imagenes con actividades que se pueden hacer en la ciudad-->
             <div class="activities-list">
-                <img src="images/Bicicleta.jpg" class="img-x2" id="act-1" alt=""> <!--Imagen de actividad 1-->
-                <img src="images/Bicicleta.jpg" class="img-x1" id="act-2" alt=""> <!--Imagen de actividad 2-->
-                <img src="images/Bicicleta.jpg" class="img-x1" id="act-3" alt=""> <!--Imagen de actividad 3-->
-                <img src="images/Bicicleta.jpg" class="img-x2" id="act-4" alt=""> <!--Imagen de actividad 4-->
-                <img src="images/Bicicleta.jpg" class="img-x2" id="act-5" alt=""> <!--Imagen de actividad 5-->
-                <img src="images/Bicicleta.jpg" class="img-x1" id="act-6" alt=""> <!--Imagen de actividad 6-->
+                <div class="img-x2">
+                    <a href="https://www.gualeguaychu.tur.ar/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/Bicicleta.jpg" alt=""> <!--Imagen de actividad 1-->
+                    </a>
+                </div>
+                <div class="img-x1">
+                    <a href="https://www.gualeguaychu.tur.ar/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/Bicicleta.jpg" alt=""> <!--Imagen de actividad 2-->
+                    </a>
+                </div>
+                <div class="img-x1">
+                    <a href="https://www.gualeguaychu.tur.ar/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/Bicicleta.jpg" alt=""> <!--Imagen de actividad 3-->
+                    </a>
+                </div>
+                <div class="img-x2">
+                    <a href="https://www.gualeguaychu.tur.ar/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/Bicicleta.jpg" alt=""> <!--Imagen de actividad 4-->
+                    </a>
+                </div>
+                <div class="img-x2">
+                    <a href="https://www.gualeguaychu.tur.ar/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/Bicicleta.jpg" alt=""> <!--Imagen de actividad 5-->
+                    </a>
+                </div>
+                <div class="img-x1">
+                    <a href="https://www.gualeguaychu.tur.ar/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/Bicicleta.jpg" alt=""> <!--Imagen de actividad 6-->
+                    </a>
+                </div>
             </div>
-                    </section>
-        <section> <!--Seccion 3: Porque elegirnos-->
-            <p>¿Porque elegirnos?</p>
-            <!--INSERTAR icono de Call to action-->
-            <p>Sitio 100% seguro</p>
-
-            <!--INSERTAR icono de Call to action-->
-            <p>Atencion personalizada</p>
-
-            <!--INSERTAR icono de Call to action-->
-            <p>Gestiona tus reservas</p>
+        </section>
+        <section class="why-us-container"> <!--Seccion 3: Porque elegirnos-->
+            <h2>¿Porque elegirnos?</h2>
+            <div class="why-us-items">
+                <div class="why-us-item">
+                    <img src="images/seguro.png" class="why-us-icon" alt="">
+                    <p>Sitio 100% seguro</p>
+                </div>
+                <div class="why-us-item">
+                    <img src="images/atencion.png" class="why-us-icon" alt="">
+                    <p>Atencion personalizada</p>
+                </div>
+                <div class="why-us-item">
+                    <img src="images/tramites.png" class="why-us-icon" alt="">
+                    <p>Gestiona tus reservas</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <!--INSERTAR logo-->
-        <!--INSERTAR icono Facebook-->
-        <!--INSERTAR icono Instagram-->
-        <!--INSERTAR Whatsapp-->
-        
-        <ul> <!--Columna de footer 1-->
-            <li>
-                <a href="">Sección 1</a> <!--No esta definido aun donde redirige-->
-            </li>
-            <li>
-                <a href="">Sección 2</a> <!--No esta definido aun donde redirige-->
-            </li>
-            <li>
-                <a href="">Sección 3</a> <!--No esta definido aun donde redirige-->
-            </li>
-            <li>
-                <a href="">Sección 4</a> <!--No esta definido aun donde redirige-->
-            </li>
-        </ul>
-        <ul> <!--Columna de footer 2-->
-            <li>
-                <a href="">Sección 1</a> <!--No esta definido aun donde redirige-->
-            </li>
-            <li>
-                <a href="">Sección 2</a> <!--No esta definido aun donde redirige-->
-            </li>
-            <li>
-                <a href="">Sección 3</a> <!--No esta definido aun donde redirige-->
-            </li>
-            <li>
-                <a href="">Sección 4</a> <!--No esta definido aun donde redirige-->
-            </li>
-        </ul>
-        <ul> <!--Columna de footer 3-->
-            <li>
-                <a href="">Sección 1</a> <!--No esta definido aun donde redirige-->
-            </li>
-            <li>
-                <a href="">Sección 2</a> <!--No esta definido aun donde redirige-->
-            </li>
-            <li>
-                <a href="">Sección 3</a> <!--No esta definido aun donde redirige-->
-            </li>
-            <li>
-                <a href="">Sección 4</a> <!--No esta definido aun donde redirige-->
-            </li>
-        </ul>
+        <div class="footer-column1">
+            <img src="images/logo-blanco.png" id="logo-footer" alt="">
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="images/facebook.png" alt="">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <img src="images/instagram.png" alt="">
+                </a>
+                <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
+                    <img src="images/whatsapp.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <ul> <!--Columna de footer 1-->
+                <li>
+                    <a href="">Sección 1</a> <!--No esta definido aun donde redirige-->
+                </li>
+                <li>
+                    <a href="">Sección 2</a> <!--No esta definido aun donde redirige-->
+                </li>
+                <li>
+                    <a href="">Sección 3</a> <!--No esta definido aun donde redirige-->
+                </li>
+                <li>
+                    <a href="">Sección 4</a> <!--No esta definido aun donde redirige-->
+                </li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <ul> <!--Columna de footer 1-->
+                <li>
+                    <a href="">Sección 1</a> <!--No esta definido aun donde redirige-->
+                </li>
+                <li>
+                    <a href="">Sección 2</a> <!--No esta definido aun donde redirige-->
+                </li>
+                <li>
+                    <a href="">Sección 3</a> <!--No esta definido aun donde redirige-->
+                </li>
+                <li>
+                    <a href="">Sección 4</a> <!--No esta definido aun donde redirige-->
+                </li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <ul> <!--Columna de footer 1-->
+                <li>
+                    <a href="">Sección 1</a> <!--No esta definido aun donde redirige-->
+                </li>
+                <li>
+                    <a href="">Sección 2</a> <!--No esta definido aun donde redirige-->
+                </li>
+                <li>
+                    <a href="">Sección 3</a> <!--No esta definido aun donde redirige-->
+                </li>
+                <li>
+                    <a href="">Sección 4</a> <!--No esta definido aun donde redirige-->
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

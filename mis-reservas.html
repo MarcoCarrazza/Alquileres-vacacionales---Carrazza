@@ -5,27 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis reservas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <!--Zona navegable (menú)-->
-        <nav>
-            <!--INSERTAR icono (por lo que inspeccione en otros sitios, se hace con la etiquera <a> que aun no vimos)-->
-            <ul>
-                <li>
-                    <a href="alquileres.html">Alquileres</a>
-                </li>
-                <li>
-                    <a href="mis-reservas.html">Mis reservas</a>
-                </li>
-                <li>
-                    <a href="quienes-somos.html">Quienes somos</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="main-menu">
+            <div class="logo-menu"> <!--LOGO-->
+                <a href="index.html">
+                    <img src="images/logo-blanco.png" alt="" id="logo-menu">
+                </a>
+            </div>
+            <nav> <!--MENU SUPERIOR-->
+                <ul class="menu-header"> <!--MENU SUPERIOR-->
+                    <li>
+                        <a class="text-menu" href="alquileres.html">Alquileres</a>
+                    </li>
+                    <li>
+                        <a class="text-menu" href="mis-reservas.html">Mis reservas</a>
+                    </li>
+                    <li>
+                        <a class="text-menu" href="quienes-somos.html">Quienes somos</a>
+                    </li>
+                    <li>
+                        <a class="text-menu" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>    
+        </div>
     </header>
 </body>
 </html>

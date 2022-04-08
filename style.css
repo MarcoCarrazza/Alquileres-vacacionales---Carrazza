@@ -45,19 +45,23 @@ header{
     transition-duration: 2s;
 }
 
-#logo{
-    width: 100px;
-    padding-left: 50px;
+#logo-menu{
+    width: 250px;
+    padding-left: 6vw;
 }
 
-.welcome{
+#logo-footer{
+    width: 250px;
+}
+
+.welcome-container{
     /* background: #0533ed; */
     color: #fff;
     display: flex;
     justify-content: center;
 }
 
-.title{
+.welcome-title{
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -116,25 +120,177 @@ header{
 .activities{
     margin: auto;
     display: table;
+    padding-bottom: 18px;
 }
 
 .activities-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 90vw;
+    width: 80vw;
 }
 
 .img-x2{
     width: 65%;
+    padding-bottom: 7px;
+    object-fit: cover;
+}
+
+.img-x2 a img{
+    width: 100%;
     height: 250px;
-    padding-bottom: 10px;
     object-fit: cover;
 }
 
 .img-x1{
     width: 34%;
-    height: 250px;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
     object-fit: cover;
+}
+
+.img-x1 a img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.why-us-container{
+    background: #27c1c6;
+    padding: 35px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.why-us-items{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.why-us-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.why-us-icon{
+    width: 70px;
+    padding-bottom: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 200px;
+    background: #0533ed;
+}
+
+.footer-column1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.footer-column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.footer-column ul{
+    list-style: none;
+}
+
+.footer-column ul li{
+    margin-bottom: 6px;
+}
+
+.footer-column ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    width: 40%;
+}
+
+.social-media img{
+    width: 25px;
+}
+
+/*---CSS para Alquileres.html---*/
+
+.alq-main{
+    margin: 0 5vw;
+}
+
+.alq-container{
+    display: flex;
+    background: #27c1c6;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.alq-img{
+    width: 40%;
+    height: auto;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.alq-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    border: solid 6px #fff;
+}
+
+.alq-img img:hover{
+    /*Aqui quiero agregar un efecto de re-size pero sin overflow*/
+}
+
+.alq-desc{
+    width: 60%;
+    padding: 15px 10px 15px 25px;
+}
+
+.alq-title{
+    font-size: 22px;
+}
+
+.alq-sku{
+    font-size: 13px;
+    padding-bottom: 15px;
+}
+
+.alq-btn{
+    background: #0533ed;
+    width: 180px;
+    height: 35px;
+    color: #fff;
+    border: solid 2px #fff;
+    margin: 15px 25px 15px 0;
+    border-radius: 30px;
+}
+
+.alq-btn:hover{
+    background: #fff;
+    color: #0533ed;
+    border: solid 3px #0533ed;
+}
+
+.maps{
+    margin-top: 10px;
+    border-radius: 10px;
 }
