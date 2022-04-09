@@ -6,6 +6,7 @@
 
 }
 
+/*-----CSS para index.html-----*/
 h1{
     font-size: 40px;
 }
@@ -17,22 +18,24 @@ h2{
 #header-index{
     align-items: center;
     min-height: 100px;
-    background-image: url(images/carnaval.jpg);
+    background-image: url(images/carnaval.jpg); /*Imagen de fondo del Header*/
     background-size: cover;
     background-position: center;
 }
 
 .header-container{
+    /*Creamos este cotainer para agregar una capa de color sobre la imagen del Header*/
     background-image: linear-gradient(rgb(5, 51,237), rgb(5, 51, 237,.8));
 }
 
-.main-menu{
+.menu-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
 }
-.menu-header{
+
+.main-menu{
     list-style: none;
     display: flex;
     justify-content: space-around;
@@ -60,7 +63,6 @@ h2{
 }
 
 .welcome-container{
-    /* background: #0533ed; */
     color: #fff;
     display: flex;
     justify-content: center;
@@ -233,7 +235,7 @@ footer{
     width: 25px;
 }
 
-/*---CSS para Alquileres.html---*/
+/*-----CSS para alquileres.html-----*/
 
 .alq-main{
     margin: 0 5vw;
