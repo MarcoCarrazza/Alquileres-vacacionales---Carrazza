@@ -14,18 +14,23 @@ h2{
     font-size: 25px;    
 }
 
-header{
-    padding-top: 10px;
+#header-index{
     align-items: center;
-    background-image: linear-gradient(rgb(61, 7, 169), rgb(5, 51, 237));
     min-height: 100px;
+    background-image: url(images/carnaval.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header-container{
+    background-image: linear-gradient(rgb(5, 51,237), rgb(5, 51, 237,.8));
 }
 
 .main-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 .menu-header{
     list-style: none;
