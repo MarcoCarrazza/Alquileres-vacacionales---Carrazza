@@ -14,6 +14,10 @@ header{
     z-index: 3;
 }
 
+footer{
+    z-index: 1;
+}
+
 /*-----CSS para index.html-----*/
 
 
@@ -416,11 +420,12 @@ footer{
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-weight: 700;
 }
 
 .us-counter-item img{
     width: 100px;
-    background-color: #0533ed;
+    margin: 13px 0;
 }
 
 /*-----CSS para mis-reservas.html-----*/
@@ -485,4 +490,80 @@ footer{
 .style-btn2:hover{
     letter-spacing: .2em;
     transition-duration: .6s;
+}
+
+/*-----CSS para contacto.html-----*/
+
+.contact-sec1{
+    padding: 70px 0;
+    /* box-shadow: inset 3px 0 15px .3px black; */
+}
+
+.contact-sec1 h1{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.contact-items{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15%;
+    text-align: center;
+}
+
+.contact-item img{
+    width: 100px;
+    margin-bottom: 15px;
+    
+    transition-duration: .7s;
+}
+
+.contact-item img:hover{
+    width: 107px;
+    transition-duration: .7s;
+}
+
+.contact-sec2{
+    display: flex;
+    justify-content: center;
+    background-image: url(images/casa.jpg);
+    background-position: center;
+    background-size:cover;
+    color: #fff;
+}
+
+.contact-left{
+    width: 50%;
+    background-image:linear-gradient(rgb(5, 51,237, .9), rgb(5, 51, 237)) ;
+    padding: 45px 0 30px 7%;
+}
+
+.contact-left p{
+    font-size: 14px;
+    text-align: justify;
+    padding-right: 55px;
+    padding-top: 20px;
+}
+
+.contact-left ul{
+    margin: 25px 0 0 40px;
+    font-size: 14px;
+}
+
+.contact-left ul li{
+    margin-bottom: 10px;
+}
+
+.contact-rigth{
+    width: 50%;
+    padding: 45px 0 30px 7%;
+    background: #0533edd4;
+
+}
+
+.formulario{
+    background: orange;
+    width: 80%;
+    height: 300px;
+    border-radius: 20px;
 }
