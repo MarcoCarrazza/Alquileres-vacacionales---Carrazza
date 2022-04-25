@@ -3,7 +3,6 @@
     padding: 0;
     font-family: 'Nunito', sans-serif;
     letter-spacing: .08rem;
-
 }
 
 main{
@@ -28,6 +27,17 @@ h1{
 h2{
     font-size: 25px;    
 }
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 'header' 'main' 'footer';
+}
+
+.header{grid-area: header;}
+.main{grid-area: main;}
+.footer{grid-area: footer;}
 
 #header-index{
     align-items: center;
@@ -164,35 +174,44 @@ h2{
     padding-bottom: 18px;
 }
 
-.activities-list{
+/* .activities-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 80vw;
-}
-
-.img-x2{
+} */
+/* .img-x2{
     width: 65%;
     padding-bottom: 7px;
     object-fit: cover;
-}
-
-.img-x2 a img{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.img-x1{
+} */
+/* .img-x1{
     width: 34%;
     padding-bottom: 7px;
     object-fit: cover;
+} */
+
+.img-x1{grid-area: img1;}
+.img-x2{grid-area: img2;}
+.img-x3{grid-area: img3;}
+.img-x4{grid-area: img4;}
+.img-x5{grid-area: img5;}
+.img-x6{grid-area: img6;}
+
+.activities-list{
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 250px);
+    gap: 9px 9px;
+    grid-template-areas: 'img2 img2 img1' 'img3 img4 img4' 'img5 img5 img6';
 }
 
-.img-x1 a img{
+.imagen{
     width: 100%;
-    height: 250px;
+    height: 100%;
     object-fit: cover;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .why-us-container{
@@ -220,27 +239,36 @@ h2{
     padding-bottom: 10px;
 }
 
-footer{
-    display: flex;
+.footer{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: auto;
+    grid-template-areas: 'social columna2 columna3 columna4';
     justify-content: space-between;
     width: 100%;
     min-height: 200px;
     background: #0533ed;
 }
 
-.footer-column1{
+.footer-social{
+    grid-area: social;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 25%;
+    /* width: 25%; */
 }
+
+.footer-column2{grid-area: columna2;}
+.footer-column3{grid-area: columna3;}
+.footer-column4{grid-area: columna4;}
 
 .footer-column{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 25%;
+    /* width: 25%; */
 }
 
 .footer-column ul{
@@ -567,3 +595,313 @@ footer{
     height: 300px;
     border-radius: 20px;
 }
+
+
+@media only screen and (max-width: 360px){
+    
+    /* Definimos tamaño de texto para los elementos h1 y h2 */
+    h1{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 14px;
+    }
+
+    /* -----------Aplicamos los estilos mobile al HEADER----------- */
+    .menu-header{
+        width: 100vw;
+        display: block;
+        justify-content: center;
+    }
+
+    .logo-menu{
+        text-align: center;
+    }
+
+    .main-menu{
+        display: block;
+        text-align: center;
+        min-width: 100%;
+        padding-top: 10px;
+    }
+
+    .text-menu{
+        font-size: 14px;
+    }
+
+    /* -----------Aplicamos los estilos mobile al FOOTER----------- */
+    .footer{
+        padding: 20px 0px;
+        display: block;
+        height: auto;
+        height: 550px;
+    }
+
+    #logo-footer{
+        width: 200px;
+        margin-top: 12px;
+    }
+
+
+    /* Ahora empezamos a aplicar estilo mobile a los MAIN de cada pagina */
+    /* -----------Aplicamos los estilos mobile al MAIN de index.html----------- */
+    .welcome-title{
+        padding-top: 40px;
+        width: 80%;
+    }      
+
+    .search-bar{
+        padding: 0 20px 50px 20px;
+        box-sizing: border-box;
+    }
+
+    .activities-list{
+        display: block;
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .activities-list div{
+        margin-bottom: 15px;
+        height: 120px;
+    }
+
+    .why-us-container h2{
+        font-size: 18px;
+    }
+
+    .why-us-items{
+        flex-direction: column;
+    }
+
+    .why-us-item{
+        margin-bottom: 45px;
+    }
+
+    .why-us-item p{
+        font-size: 14px;
+    }
+
+
+    /* -----------Aplicamos los estilos mobile al MAIN de alquileres.html----------- */
+    .alq-search{
+        position: inherit;
+    }
+    
+    .alq-search-bar{
+        width: 100%;
+        padding: 20px 15px;
+        margin: 0 10px;
+    }
+    
+    .elements{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .search-items{
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .alq-main{
+        margin: 0;
+        /* padding: 0 10px; */
+        box-sizing: border-box;
+    }
+
+    .alq-container{
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .alq-img{
+        width: auto;
+        /* padding: 10px; */
+    }
+
+    .alq-img img{
+        border: none;
+    }
+
+    .alq-desc{
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .btn-container{
+        padding: 0 30px;
+        margin: 20px 0;
+    }
+
+    .alq-btn{
+        width: 100%;
+    }
+
+    .maps{
+        margin-bottom: 14px;
+    }
+
+
+    /* -----------Aplicamos los estilos mobile al MAIN de mis-reservas.html----------- */
+    .account-section{
+        height: auto;
+        width: 100vw;
+        display: block;
+    }
+
+    .account{
+        display: block;
+        width: auto;
+        margin: 0;
+        padding: 5%;
+        text-align: center;
+    }
+
+    .account-signup{
+        width: 100%;
+        padding: 30px 0;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .account-signup p{
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .account-form{
+        margin: 20px 0 0 0;
+    }
+    
+    .account-login{
+        width: 100%;
+        padding: 30px 0;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .account-login p{
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+
+    /* -----------Aplicamos los estilos mobile al MAIN de quienes-somos.html----------- */
+
+    .us-banner, .us-backg{
+        min-height: 300px;
+        height: 300px;
+    }
+    
+    .us-title{
+        font-size: 26px;
+    }
+
+    .us-description{
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    .us-desc{
+        flex-direction: column;
+
+    }
+
+    .us-desc-text{
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 20px;
+        order: 1; /* Aplicamos reordenamiento de columnas para que siempre sea texto + imagen */
+    }
+
+    .us-desc-img{
+        width: 100%;
+        order: 2; /* Aplicamos reordenamiento de columnas para que siempre sea texto + imagen */
+    }
+
+    .us-counter{
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    .us-counter-item{
+        font-size: 14px;
+        margin-top: 40px;
+    }
+
+    .us-counter-item img{
+        margin: 5px 0;
+        width: 70px;
+    }
+
+
+    /* -----------Aplicamos los estilos mobile al MAIN de contacto.html----------- */
+
+    .contact-sec1{
+        padding: 70px 0 40px 0;
+    }
+    
+    .contact-items{
+        display: block;
+        padding: 0;
+    }
+
+    .contact-item{
+        margin-bottom: 60px;
+    }
+
+    .contact-item img{
+        width: 70px;
+        margin: 0;
+    }
+
+    .contact-item p{
+        font-size: 14px;
+    }
+
+    .contact-sec2{
+        flex-direction: column;
+        width: 100vw;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .contact-left{
+        width: 100%;
+        padding: 45px 18px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .contact-left p{
+        padding: 20px 0 0 0;
+        font-size: 14px;
+    }
+
+    .contact-left h2{
+        font-size: 20px;
+    }
+
+    .contact-left ul{
+        margin: 20px 2px 0 25px;
+        text-align: left;
+    }
+
+    .contact-rigth{
+        width: 100%;
+        padding: 45px 18px;
+        text-align: center;
+        box-sizing: border-box
+    }
+
+    .formulario{
+        width: 100%;
+    } 
+}  
