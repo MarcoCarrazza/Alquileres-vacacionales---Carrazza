@@ -370,6 +370,7 @@ body{
     margin: 20px 0;
     position: sticky;
     top:10px;
+    z-index: 100;
 }
 .alq-search-bar{
     display: flex;
