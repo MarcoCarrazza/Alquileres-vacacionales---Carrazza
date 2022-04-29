@@ -7,14 +7,17 @@
 
 main{
     z-index: 1;
+    grid-area: main;
 }
 
 header{
     z-index: 3;
+    grid-area: header;
 }
 
 footer{
     z-index: 1;
+    grid-area: footer;
 }
 
 /*-----CSS para index.html-----*/
@@ -34,10 +37,6 @@ body{
     grid-template-rows: auto auto auto;
     grid-template-areas: 'header' 'main' 'footer';
 }
-
-.header{grid-area: header;}
-.main{grid-area: main;}
-.footer{grid-area: footer;}
 
 #header-index{
     align-items: center;
@@ -84,12 +83,12 @@ body{
     transition-duration: 2s;
 }
 
-#logo-menu{
+.logo-menu-img{
     width: 250px;
     padding-left: 6vw;
 }
 
-#logo-footer{
+.logo-footer{
     width: 250px;
 }
 
@@ -597,26 +596,40 @@ body{
 }
 
 
-@media only screen and (max-width: 360px){
+@media only screen and (max-width: 768px){
     
     /* Definimos tamaño de texto para los elementos h1 y h2 */
-    h1{
+    *{
         font-size: 20px;
+    }
+    
+    h1{
+        font-size: 28px;
     }
 
     h2{
-        font-size: 14px;
+        font-size: 28px;
+    }
+
+    h3{
+        font-size: 20px;
     }
 
     /* -----------Aplicamos los estilos mobile al HEADER----------- */
     .menu-header{
         width: 100vw;
-        display: block;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
     }
 
     .logo-menu{
         text-align: center;
+    }
+
+    .logo-menu-img{
+        width: 400px;
+        padding: 0;
     }
 
     .main-menu{
@@ -627,7 +640,7 @@ body{
     }
 
     .text-menu{
-        font-size: 14px;
+        font-size: 22px;
     }
 
     /* -----------Aplicamos los estilos mobile al FOOTER----------- */
@@ -638,9 +651,17 @@ body{
         height: 550px;
     }
 
-    #logo-footer{
-        width: 200px;
+    .logo-footer{
+        width: 400px;
         margin-top: 12px;
+    }
+
+    .footer-column ul li a{
+        font-size: 20px;
+    }
+
+    .footer-column2{
+        margin-top: 30px;
     }
 
 
@@ -651,21 +672,39 @@ body{
         width: 80%;
     }      
 
+    .welcome-title p{
+        font-size: 20px;
+    }
+
     .search-bar{
         padding: 0 20px 50px 20px;
         box-sizing: border-box;
     }
 
+    .style-btn1{
+        font-size: 20px;
+        height: 45px;
+        min-width: 240px;
+    }
+
+    .title-activities{
+        font-size: 26px;
+    }
+
     .activities-list{
-        display: block;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
         padding: 0 20px;
         box-sizing: border-box;
     }
 
     .activities-list div{
         margin-bottom: 15px;
-        height: 120px;
+        height: 200px;
+        width: 95%;
     }
 
     .why-us-container h2{
@@ -681,7 +720,7 @@ body{
     }
 
     .why-us-item p{
-        font-size: 14px;
+        font-size: 20px;
     }
 
 
@@ -704,6 +743,8 @@ body{
     .search-items{
         width: 100%;
         margin-bottom: 8px;
+        font-size: 20px;
+        height: 50px;
     }
 
     .alq-main{
@@ -729,6 +770,14 @@ body{
         border: none;
     }
 
+    .alq-title{
+        font-size: 28px;
+    }
+
+    .alq-sku{
+        font-size: 20px;
+    }
+
     .alq-desc{
         width: 100%;
         padding: 0 15px;
@@ -742,11 +791,14 @@ body{
     }
 
     .alq-btn{
-        width: 100%;
+        width: 70%;
+        height: 50px;
     }
+
 
     .maps{
         margin-bottom: 14px;
+        width: 70%;
     }
 
 
@@ -771,13 +823,17 @@ body{
         border-radius: 15px 15px 0 0;
     }
 
-    .account-signup p{
-        font-size: 14px;
+    .account-signup p, .account-login p{
+        font-size: 20px;
         padding: 0 10px;
     }
 
     .account-form{
         margin: 20px 0 0 0;
+    }
+
+    .account-form input{
+        height: 40px;
     }
     
     .account-login{
@@ -786,9 +842,8 @@ body{
         border-radius: 0 0 15px 15px;
     }
 
-    .account-login p{
-        font-size: 14px;
-        padding: 0 10px;
+    .style-btn2{
+        height: 50px;
     }
 
 
@@ -800,11 +855,11 @@ body{
     }
     
     .us-title{
-        font-size: 26px;
+        font-size: 34px;
     }
 
     .us-description{
-        font-size: 16px;
+        font-size: 20px;
         padding: 0 20px;
     }
 
@@ -862,10 +917,6 @@ body{
         margin: 0;
     }
 
-    .contact-item p{
-        font-size: 14px;
-    }
-
     .contact-sec2{
         flex-direction: column;
         width: 100vw;
@@ -882,11 +933,11 @@ body{
 
     .contact-left p{
         padding: 20px 0 0 0;
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .contact-left h2{
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .contact-left ul{
