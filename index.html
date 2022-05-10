@@ -5,59 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="src/images/logo.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="header" id="header-index">
+    <header id="header-index">
         <div class="header-container">
             <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: transparent;">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="../index.html">
-                    <img src="images/logo-blanco.png" alt="" class="logo-menu-img">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="src/images/logo-blanco.png" alt="Logo" class="logo-menu-img">
                   </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                      <a class="nav-link" aria-current="page" href="pages/alquileres.html">Alquileres</a>
-                      <a class="nav-link" href="pages/mis-reservas.html">Mis reservas</a>
-                      <a class="nav-link" href="pages/quienes-somos.html">Quienes somos</a>
-                      <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                      <a class="nav-link" aria-current="page" href="src/pages/alquileres.html">Alquileres</a>
+                      <a class="nav-link" href="src/pages/mis-reservas.html">Mis reservas</a>
+                      <a class="nav-link" href="src/pages/quienes-somos.html">Quienes somos</a>
+                      <a class="nav-link" href="src/pages/contacto.html">Contacto</a>
                     </div>
                   </div>
                 </div>
             </nav>
             
-            <!-- <div class="menu-header"> 
-                <a class="logo-menu"> 
-                    <img src="images/logo-blanco.png" alt="" class="logo-menu-img">
-                </a>
-                <nav> 
-                    <ul class="main-menu"> 
-                        <li>
-                            <a class="text-menu" href="pages/alquileres.html">Alquileres</a>
-                        </li>
-                        <li>
-                            <a class="text-menu" href="pages/mis-reservas.html">Mis reservas</a>
-                        </li>
-                        <li>
-                            <a class="text-menu" href="pages/quienes-somos.html">Quienes somos</a>
-                        </li>
-                        <li>
-                            <a class="text-menu" href="pages/contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>    
-            </div> -->
             <section class="welcome-container">
-                <div class="welcome-title">
+                <div class="welcome-container-title">
                     <h1 class="title-title animate__animated animate__rubberBand">VENÍ A GUALEGUAYCHÚ!</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum officia est tempora hic nihil assumenda tenetur nostrum magni esse optio nam cupiditate, ipsum totam excepturi beatae ab quam animi quas.</p>
                     <button class="style-btn1 login-btn" ><strong>Iniciar sesión</strong></button>
@@ -106,40 +85,40 @@
             </section>
         </div>
     </header>
-    <main class="main">
+    <main>
         <section class="activities"> <!--Seccion 2: Actividades-->
-            <h2 class="title-activities">¿Porque elegir nuestra ciudad para tus vacaciones?</h2>
+            <h2 class="activities-title">¿Porque elegir nuestra ciudad para tus vacaciones?</h2>
             
             <!--Aca se inserta la grilla de imagenes con actividades que se pueden hacer en la ciudad-->
             <div class="activities-list">
-                <div class="img-x1 animate__animated animate__slideInRight">
-                    <a href="https://www.gualeguaychu.tur.ar/" target="_blank" rel="noopener noreferrer">
-                        <img class="imagen" src="images/bicicleta.jpg" loading="lazy" alt=""> <!--Imagen de actividad 1-->
+                <div class="img-x1 image-container animate__animated animate__slideInRight">
+                    <a href="https://www.gualeguaychu.tur.ar/ecoturismo.html" target="_blank" rel="noopener noreferrer">
+                        <img class="imagen" src="src/images/portada-ecoturismo.png" loading="lazy" alt="Ecoturismo"> <!--Imagen de actividad 1-->
                     </a>
                 </div>
-                <div class="img-x2 animate__animated animate__slideInLeft">
-                    <a href="https://www.gualeguaychu.tur.ar/" target="_blank" rel="noopener noreferrer">
-                        <img class="imagen" src="images/bicicleta.jpg" loading="lazy" alt=""> <!--Imagen de actividad 2-->
+                <div class="img-x2 image-container animate__animated animate__slideInLeft">
+                    <a href="https://www.gualeguaychu.tur.ar/playas.html" target="_blank" rel="noopener noreferrer">
+                        <img class="imagen" src="src/images/portada-playas.png" loading="lazy" alt="Playas de la ciudad"> <!--Imagen de actividad 2-->
                     </a>
                 </div>
-                <div class="img-x3 animate__animated animate__slideInLeft">
-                    <a href="https://www.gualeguaychu.tur.ar/" target="_blank" rel="noopener noreferrer">
-                        <img class="imagen" src="images/bicicleta.jpg" loading="lazy" alt=""> <!--Imagen de actividad 3-->
+                <div class="img-x3 image-container animate__animated animate__slideInLeft">
+                    <a href="https://www.gualeguaychu.tur.ar/termas.html" target="_blank" rel="noopener noreferrer">
+                        <img class="imagen" src="src/images/portada-termas.png" loading="lazy" alt="Nuestras termas"> <!--Imagen de actividad 3-->
                     </a>
                 </div>
-                <div class="img-x4 animate__animated animate__slideInRight">
-                    <a href="https://www.gualeguaychu.tur.ar/" target="_blank" rel="noopener noreferrer">
-                        <img class="imagen" src="images/bicicleta.jpg" loading="lazy" alt=""> <!--Imagen de actividad 4-->
+                <div class="img-x4 image-container animate__animated animate__slideInRight">
+                    <a href="https://www.gualeguaychu.tur.ar/carnavales.html" target="_blank" rel="noopener noreferrer">
+                        <img class="imagen" src="src/images/portada-carnaval.png" loading="lazy" alt="Carnaval del País"> <!--Imagen de actividad 4-->
                     </a>
                 </div>
-                <div class="img-x5 animate__animated animate__slideInLeft">
-                    <a href="https://www.gualeguaychu.tur.ar/" target="_blank" rel="noopener noreferrer">
-                        <img class="imagen" src="images/bicicleta.jpg" loading="lazy" alt=""> <!--Imagen de actividad 5-->
+                <div class="img-x5 image-container animate__animated animate__slideInLeft">
+                    <a href="https://www.gualeguaychu.tur.ar/fiestas-locales.html" target="_blank" rel="noopener noreferrer">
+                        <img class="imagen" src="src/images/portada-carrozas.png" loading="lazy" alt="Festivales locales"> <!--Imagen de actividad 5-->
                     </a>
                 </div>
-                <div class="img-x6 animate__animated animate__slideInRight">
-                    <a href="https://www.gualeguaychu.tur.ar/" target="_blank" rel="noopener noreferrer">
-                        <img class="imagen" src="images/bicicleta.jpg" loading="lazy" alt=""> <!--Imagen de actividad 6-->
+                <div class="img-x6 image-container animate__animated animate__slideInRight">
+                    <a href="https://www.gualeguaychu.tur.ar/turismo-cultural.html" target="_blank" rel="noopener noreferrer">
+                        <img class="imagen" src="src/images/portada-turismocultural.png" loading="lazy" alt="Turismo cultural"> <!--Imagen de actividad 6-->
                     </a>
                 </div>
             </div>
@@ -147,81 +126,78 @@
         <section class="why-us-container"> <!--Seccion 3: Porque elegirnos-->
             <h2>¿Porque elegirnos?</h2>
             <div class="why-us-items">
-                <div class="why-us-item">
-                    <img src="images/seguro.png" class="why-us-icon" alt="">
+                <div class="why-us-items-item">
+                    <img src="src/images/seguro.png" class="why-us-icon" alt="">
                     <p>Sitio 100% seguro</p>
                 </div>
-                <div class="why-us-item">
-                    <img src="images/atencion.png" class="why-us-icon" alt="">
+                <div class="why-us-items-item">
+                    <img src="src/images/atencion.png" class="why-us-icon" alt="">
                     <p>Atencion personalizada</p>
                 </div>
-                <div class="why-us-item">
-                    <img src="images/tramites.png" class="why-us-icon" alt="">
+                <div class="why-us-items-item">
+                    <img src="src/images/tramites.png" class="why-us-icon" alt="">
                     <p>Gestiona tus reservas</p>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer>
         <div class="footer-social"> <!--Columna de footer 1-->
-            <img src="images/logo-blanco.png" class="logo-footer" alt="">
+            <img src="src/images/logo-blanco.png" class="logo-footer" alt="Logo">
             <div class="social-media">
                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                    <img src="images/facebook.png" alt="">
+                    <img src="src/images/facebook.png" alt="Facebook">
                 </a>
                 <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                    <img src="images/instagram.png" alt="">
+                    <img src="src/images/instagram.png" alt="Instagram">
                 </a>
                 <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
-                    <img src="images/whatsapp.png" alt="">
+                    <img src="src/images/whatsapp.png" alt="Whatsapp">
                 </a>
             </div>
         </div>
         <div class="footer-column footer-column2"> <!--Columna de footer 2-->
             <ul> 
                 <li>
-                    <a href="">Sección 1</a> <!--No esta definido aun donde redirige-->
+                    <a href="src/pages/alquileres.html">Alquileres</a>
                 </li>
                 <li>
-                    <a href="">Sección 2</a> <!--No esta definido aun donde redirige-->
+                    <a href="src/pages/mis-reservas.html">Mis reservas</a>
                 </li>
                 <li>
-                    <a href="">Sección 3</a> <!--No esta definido aun donde redirige-->
+                    <a href="src/pages/quienes-somos.html">Quienes somos</a>
                 </li>
                 <li>
-                    <a href="">Sección 4</a> <!--No esta definido aun donde redirige-->
+                    <a href="src/pages/contacto.html">Contacto</a>
                 </li>
             </ul>
         </div>
         <div class="footer-column footer-column3"> <!--Columna de footer 3-->
             <ul> 
                 <li>
-                    <a href="">Sección 1</a> <!--No esta definido aun donde redirige-->
+                    <a href="https://www.gualeguaychu.tur.ar/playas.html" target="_blank" rel="noopener noreferrer">Playas</a>
                 </li>
                 <li>
-                    <a href="">Sección 2</a> <!--No esta definido aun donde redirige-->
+                    <a href="https://www.gualeguaychu.tur.ar/ecoturismo.html" target="_blank" rel="noopener noreferrer">Ecoturismo</a>
                 </li>
                 <li>
-                    <a href="">Sección 3</a> <!--No esta definido aun donde redirige-->
+                    <a href="https://www.gualeguaychu.tur.ar/termas.html" target="_blank" rel="noopener noreferrer">Termas</a>
                 </li>
                 <li>
-                    <a href="">Sección 4</a> <!--No esta definido aun donde redirige-->
+                    <a href="https://www.gualeguaychu.tur.ar/carnavales.html" target="_blank" rel="noopener noreferrer">Carnavales</a>
                 </li>
             </ul>
         </div>
         <div class="footer-column footer-column4"> <!--Columna de footer 4-->
             <ul> 
                 <li>
-                    <a href="">Sección 1</a> <!--No esta definido aun donde redirige-->
+                    <a href="https://www.gualeguaychu.tur.ar/fiestas-locales.html" target="_blank" rel="noopener noreferrer">Festivales</a>
                 </li>
                 <li>
-                    <a href="">Sección 2</a> <!--No esta definido aun donde redirige-->
+                    <a href="https://www.gualeguaychu.tur.ar/turismo-cultural.html" target="_blank" rel="noopener noreferrer">Tursimo cultural</a>
                 </li>
                 <li>
-                    <a href="">Sección 3</a> <!--No esta definido aun donde redirige-->
-                </li>
-                <li>
-                    <a href="">Sección 4</a> <!--No esta definido aun donde redirige-->
+                    <a href="https://gualeguaychu.gov.ar/transportepublico/" target="_blank" rel="noopener noreferrer">Transporte</a>
                 </li>
             </ul>
         </div>

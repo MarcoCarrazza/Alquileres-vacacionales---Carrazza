@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquileres</title>
+    <link rel="shortcut icon" href="../images/logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0533ed;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../../index.html">
+                <img src="../images/logo-blanco.png" alt="Logo" class="logo-menu-img">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="./alquileres.html">Alquileres</a>
+                  <a class="nav-link" href="./mis-reservas.html">Mis reservas</a>
+                  <a class="nav-link" href="./quienes-somos.html">Quienes somos</a>
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section class="alq-search">
+            <!--Buscador de alojamientos-->
+            <section class="alq-search-bar">
+                <div class="elements">
+                    <!--Lista desplegable "Que estas buscando?"-->
+                    <select name="search-items" class="search-items" id="">
+                        <option value="" selected disabled hidden>Que estás buscando?</option>
+                        <option value="casas">Casas</option>
+                        <option value="departamentos">Departamentos</option>
+                        <option value="cabanas">Cabañas</option>
+                        <option value="bungalows">Bungalows</option>
+                        <option value="complejos">Complejos</option>
+                    </select>
+                    <!--Menu de calendario-->
+                    <button class="search-items">Check in - Check out</button>
+                    <!--Lista desplegable de cantidad de huespedes-->
+                    <select name="people-set" class="search-items" id="">
+                        <option value="" selected disabled hidden>2 personas - 1 habitación</option>
+                        <option value="1">1 persona</option>
+                        <option value="2">2 persona</option>
+                        <option value="3">3 persona</option>
+                        <option value="4">4 persona</option>
+                        <option value="5">5 persona</option>
+                        <option value="6">6 persona</option>
+                        <option value="7">7 persona</option>
+                        <option value="8">8 persona</option>
+                        <option value="9">9 persona</option>
+                        <option value="10">10 persona</option>
+                        <option value="11">11 persona</option>
+                        <option value="12">12 persona</option>
+                        <option value="13">13 persona</option>
+                        <option value="14">14 persona</option>
+                        <option value="15">15 persona</option>
+                        <option value="16">16 persona</option>
+                        <option value="17">17 persona</option>
+                        <option value="18">18 persona</option>
+                        <option value="19">19 persona</option>
+                        <option value="20">20 persona</option>
+                    </select>
+                    <!--Boton BUSCAR-->
+                    <button class="style-btn1 search-btn"><strong>Buscar</strong></button>
+                </div>    
+            </section>
+        </section>
+        <section class="alq-main">
+            
+            <!-- ALQUILER NRO 1 -->
+            <div class="alq-container">
+                <div class="alq-container-img animate__animated animate__zoomIn">
+                    <!--Aqui se agrega el contenedor de fotos de la propiedad-->
+                    <img src="../images/alquiler-1.jpg" loading="lazy" alt="Fotos de la propiedad">
+                </div>
+                <div class="alq-container-desc">
+                    <h3 class="alq-container-title"> <strong>Casa con pileta p/ 8 pesonas</strong></h3>
+                    <p class="alq-container-sku">Cod: 252612</p>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              Descripción de la propiedad:
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              Formas de pago:
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              A tener en cuenta:
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                          </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="alq-container-btn animate__animated animate__shakeX animate__delay-2s"><strong>Reservar ahora!</strong></button>
+                        <button class="alq-container-btn"><strong>Hacer una consulta</strong></button>
+                    </div>   
+                    <iframe class="alq-container-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.6943112390504!2d-58.508576985106146!3d-33.011833882520534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95baa9d302fc36a7%3A0x271df65692b95feb!2sLeandro%20N.%20Alem%20234%2C%20Gualeguaych%C3%BA%2C%20Entre%20R%C3%ADos!5e0!3m2!1sen!2sar!4v1649449999085!5m2!1sen!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
+                </div>
+            </div>
+
+            <!-- ALQUILER NRO 2 -->
+            <div class="alq-container">
+              <div class="alq-container-img animate__animated animate__zoomIn">
+                  <!--Aqui se agrega el contenedor de fotos de la propiedad-->
+                  <img src="../images/alquiler-2.JPG" loading="lazy" alt="Fotos de la propiedad">
+              </div>
+              <div class="alq-container-desc">
+                  <h3 class="alq-container-title"> <strong>Casa en el centro p/ 15 pesonas</strong></h3>
+                  <p class="alq-container-sku">Cod: 252578</p>
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Descripción de la propiedad:
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Formas de pago:
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            A tener en cuenta:
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                        </div>
+                      </div>
+                  </div>
+                  <div>
+                      <button class="alq-container-btn animate__animated animate__shakeX animate__delay-2s"><strong>Reservar ahora!</strong></button>
+                      <button class="alq-container-btn"><strong>Hacer una consulta</strong></button>
+                  </div>   
+                  <iframe class="alq-container-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3345.7321617302655!2d-58.511401184975!3d-33.0108361824702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95baa82cae327391%3A0x7874ae0690a24f7d!2zQm9sw612YXIgNDUzLCBHdWFsZWd1YXljaMO6LCBFbnRyZSBSw61vcw!5e0!3m2!1ses-419!2sar!4v1652140160113!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </div>
+        </section>
+    </main>
+    <footer>
+      <div class="footer-social"> <!--Columna de footer 1-->
+          <img src="../../src/images/logo-blanco.png" class="logo-footer" alt="Logo">
+          <div class="social-media">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                  <img src="../../src/images/facebook.png" alt="Facebook">
+              </a>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                  <img src="../../src/images/instagram.png" alt="Instagram">
+              </a>
+              <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
+                  <img src="../../src/images/whatsapp.png" alt="Whatsapp">
+              </a>
+          </div>
+      </div>
+      <div class="footer-column footer-column2"> <!--Columna de footer 2-->
+          <ul> 
+              <li>
+                  <a href="./alquileres.html">Alquileres</a>
+              </li>
+              <li>
+                  <a href="./mis-reservas.html">Mis reservas</a>
+              </li>
+              <li>
+                  <a href="./quienes-somos.html">Quienes somos</a>
+              </li>
+              <li>
+                  <a href="./contacto.html">Contacto</a>
+              </li>
+          </ul>
+      </div>
+      <div class="footer-column footer-column3"> <!--Columna de footer 3-->
+          <ul> 
+              <li>
+                  <a href="https://www.gualeguaychu.tur.ar/playas.html" target="_blank" rel="noopener noreferrer">Playas</a>
+              </li>
+              <li>
+                  <a href="https://www.gualeguaychu.tur.ar/ecoturismo.html" target="_blank" rel="noopener noreferrer">Ecoturismo</a>
+              </li>
+              <li>
+                  <a href="https://www.gualeguaychu.tur.ar/termas.html" target="_blank" rel="noopener noreferrer">Termas</a>
+              </li>
+              <li>
+                  <a href="https://www.gualeguaychu.tur.ar/carnavales.html" target="_blank" rel="noopener noreferrer">Carnavales</a>
+              </li>
+          </ul>
+      </div>
+      <div class="footer-column footer-column4"> <!--Columna de footer 4-->
+          <ul> 
+              <li>
+                  <a href="https://www.gualeguaychu.tur.ar/fiestas-locales.html" target="_blank" rel="noopener noreferrer">Festivales</a>
+              </li>
+              <li>
+                  <a href="https://www.gualeguaychu.tur.ar/turismo-cultural.html" target="_blank" rel="noopener noreferrer">Tursimo cultural</a>
+              </li>
+              <li>
+                  <a href="https://gualeguaychu.gov.ar/transportepublico/" target="_blank" rel="noopener noreferrer">Transporte</a>
+              </li>
+          </ul>
+      </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
