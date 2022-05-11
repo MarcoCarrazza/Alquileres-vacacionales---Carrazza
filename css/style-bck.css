@@ -1,0 +1,938 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: .08rem;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 25px;    
+}
+
+/* Definimos el layout del main, header y footer con GRID para todas las paginas */
+header{
+    z-index: 3;
+    grid-area: header;
+    width: 100vw;
+}
+
+main{
+    z-index: 1;
+    grid-area: main;
+}
+
+footer{
+    z-index: 1;
+    grid-area: footer;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 'header' 'main' 'footer';
+}
+
+/* -----Definimos el CSS para el header (mismo header para todas las paginas)----- */
+#header-index{
+    align-items: center;
+    min-height: 100px;
+    background-image: url(../src/images/carnaval.jpg); /*Imagen de fondo del Header*/
+    background-size: cover;
+    background-position: center;
+}
+
+.header-container{
+    /*Creamos este cotainer para agregar una capa de color sobre la imagen del Header*/
+    background-image: linear-gradient(rgb(5, 51,237), rgb(5, 51, 237,.8));
+}
+
+/* .menu-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    z-index: 5;
+} */
+
+.menu-shadow{
+    box-shadow: 0 3px 10px .1px rgba(0, 0, 0, 0.45);
+}
+
+/* .main-menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    min-width: 450px;
+    padding-right: 30px;
+} */
+
+/* .text-menu{
+    text-decoration: none;
+    color: #fff;    
+} */
+
+/* .text-menu:hover{
+    text-decoration: underline;
+    transition-duration: 2s;
+} */
+
+.logo-menu-img{
+    width: 250px;
+    padding-left: 6vw;
+}
+
+.nav-position{
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+
+/* -----Definimos el CSS para el footer (mismo footer para todas las paginas)----- */
+footer{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: auto;
+    grid-template-areas: 'social columna2 columna3 columna4';
+    justify-content: space-between;
+    width: 100%;
+    min-height: 200px;
+    background: #0533ed;
+}
+
+.footer-social{
+    grid-area: social;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.footer-column2{grid-area: columna2;}
+.footer-column3{grid-area: columna3;}
+.footer-column4{grid-area: columna4;}
+
+.footer-column{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    margin: 25px 0;
+}
+
+.footer-column ul{
+    list-style: none;
+}
+
+.footer-column ul li{
+    margin-bottom: 6px;
+}
+
+.footer-column ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.footer-column ul li a:hover{
+    font-size: 14px;
+}
+
+.logo-footer{
+    width: 250px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    width: 40%;
+}
+
+.social-media img{
+    width: 25px;
+}
+
+
+/* Empezamos a definir el CSS para cada una de nuestras paginas */
+/*--------------------CSS para index.html--------------------*/
+
+.welcome-container{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-container-title{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    word-wrap: break-word;
+    padding-top: 70px;
+}
+
+.title-title{
+    padding-bottom: 15px;
+}
+
+.style-btn1{
+    background: #2cd4d9;
+    min-width: 120px;
+    height: 35px;
+    color: #0533ed;
+    border: solid 2px #fff;
+    border-radius: 30px;
+    transition-duration: .6s;
+}
+
+.style-btn1:hover{
+    background: #fff;
+    border: solid 3px #27c1c6;
+    box-shadow: inset 0 0 10px .3px #0533ed;
+    transition-duration: .6s;
+}
+
+.login-btn{
+    margin-top: 25px;
+    padding: 0 15px;
+}
+
+.search-bar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    padding-bottom: 120px;
+    
+}
+
+.elements{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-items{
+    height: 35px;
+    width: 200px;
+    border-radius: 6px;
+    border: none;
+    text-align: center;
+}
+
+.activities{
+    margin: auto;
+    display: table;
+    padding-bottom: 18px;
+}
+
+.activities-title{
+    text-align: center;
+    margin: 47px 0;
+}
+
+.activities-list{
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 250px);
+    gap: 9px 9px;
+    grid-template-areas: 'img2 img2 img1' 'img3 img4 img4' 'img5 img5 img6';
+}
+
+.img-x1{grid-area: img1;}
+.img-x2{grid-area: img2;}
+.img-x3{grid-area: img3;}
+.img-x4{grid-area: img4;}
+.img-x5{grid-area: img5;}
+.img-x6{grid-area: img6;}
+
+.image-container{
+    overflow: hidden;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    background: #0533ed;
+}
+
+.imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: ease-in .6s;
+}
+
+.imagen:hover{
+    transform: scale(1.05);
+    transition: ease-in .6s;
+    opacity: .6;
+}
+
+.why-us-container{
+    background: #27c1c6;
+    padding: 35px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.why-us-items{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.why-us-items-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.why-us-icon{
+    width: 70px;
+    padding-bottom: 10px;
+}
+
+
+
+/*--------------------CSS para alquileres.html--------------------*/
+
+.alq-main{
+    margin: 0 5vw;
+}
+
+.alq-search{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    position: sticky;
+    top:10px;
+    z-index: 100;
+}
+.alq-search-bar{
+    display: flex;
+    justify-content: center;
+    padding: 15px 25px;
+    border-radius: 30px;
+    align-content: center;
+    width: auto;
+    background: #0533ed;
+    box-shadow: 0px 7px 11px 5px rgba(0,0,0,0.12);
+}
+
+.alq-container{
+    display: flex;
+    background: #27c1c6;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.alq-container-img{
+    width: 40%;
+    height: auto;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.alq-container-img img{
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: solid 6px #fff;
+}
+
+.alq-container-desc{
+    width: 60%;
+    padding: 15px 10px 15px 25px;
+}
+
+.alq-container-title{
+    font-size: 22px;
+}
+
+.alq-container-sku{
+    font-size: 13px;
+    padding-bottom: 15px;
+}
+
+.accordion-item{
+    background: rgb(255,255,255,.4);
+    border: solid 1px black;
+}
+
+.alq-container-btn{
+    background: #0533ed;
+    width: 180px;
+    height: 35px;
+    color: #fff;
+    border: solid 2px #fff;
+    margin: 15px 25px 15px 0;
+    border-radius: 30px;    
+}
+
+.alq-container-btn:hover{
+    background: #fff;
+    color: #0533ed;
+    border: solid 3px #0533ed;
+}
+
+.alq-container-maps{
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+
+
+/*--------------------CSS para quienes-somos.html--------------------*/
+
+.us-banner{
+    min-height: 400px;
+    background-image: url(../src/images/hostel.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.us-banner-backg{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(0, 0, 0, .4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.us-banner-title{
+    color: #fff;
+    font-size: 40px;
+}
+
+.us-banner-description{
+    color: #fff;
+    margin-top: 20px;
+    padding: 0 15%;
+}
+
+.us-expla{
+    margin: 40px 10%;
+}
+
+.us-expla-text{
+    text-align: justify;
+}
+
+.us-expla-img{
+    object-fit: fill;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+
+.us-expla-img img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.us-counter{
+    margin: 65px 22%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.us-counter-item{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+}
+
+.us-counter-item img{
+    width: 100px;
+    margin: 13px 0;
+}
+
+
+
+/*--------------------CSS para mis-reservas.html--------------------*/
+
+.account{
+    background-image: url(../src/images/hostel.jpg);
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+.account-container{
+    display: flex;
+    justify-content: center;
+    padding: 50px 30px;
+}
+
+.account-signup{
+    background-color: #0533ed;
+    padding: 20px;
+    border-radius: 15px 0 0 15px;
+    color: #fff;
+}
+
+.account-login{
+    background-color: #27c1c6;
+    padding: 20px;
+    border-radius: 0 15px 15px 0;
+}
+
+.account-form{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.account-form p{
+    font-size: 15px;
+}
+
+.account-form input{
+    width: 80%;
+    height: 22px;
+    margin-bottom: 10px;
+}
+
+.style-btn2{
+    background: #fff;
+    padding: 5px 10px;
+    height: 35px;
+    color: #0533ed;
+    border: solid 2px #fff;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition-duration: .6s;
+    box-shadow: 0 3px 10px .1px rgba(0, 0, 0, 0.418);
+}
+
+.style-btn2:hover{
+    letter-spacing: .2em;
+    transition-duration: .6s;
+}
+
+
+
+/*--------------------CSS para contacto.html--------------------*/
+
+.contact-sec1{
+    padding: 70px 0;
+}
+
+.contact-sec1 h1{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.contact-sec1-items{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15%;
+    text-align: center;
+}
+
+.contact-sec1-items-item img{
+    width: 100px;
+    margin-bottom: 15px;
+    
+    transition-duration: .7s;
+}
+
+.contact-sec1-items-item img:hover{
+    width: 107px;
+    transition-duration: .7s;
+}
+
+.contact-sec2{
+    display: flex;
+    justify-content: center;
+    background-image: url(../src/images/casa.jpg);
+    background-position: center;
+    background-size:cover;
+    color: #fff;
+}
+
+.contact-sec2-left{
+    width: 50%;
+    background-image:linear-gradient(rgb(5, 51,237, .9), rgb(5, 51, 237)) ;
+    padding: 45px 0 30px 7%;
+}
+
+.contact-sec2-left p{
+    font-size: 14px;
+    text-align: justify;
+    padding-right: 55px;
+    padding-top: 20px;
+}
+
+.contact-sec2-left ul{
+    margin: 25px 0 0 40px;
+    font-size: 14px;
+}
+
+.contact-sec2-left ul li{
+    margin-bottom: 10px;
+}
+
+.contact-sec2-rigth{
+    width: 50%;
+    padding: 45px 0 30px 7%;
+    background: #0533edd4;
+
+}
+
+.contact-form{
+    background: orange;
+    width: 80%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px){
+    
+    /* Definimos tamaño de texto para los elementos h1, h2 y h3 */
+    *{
+        font-size: 20px;
+    }
+    
+    h1{
+        font-size: 28px;
+    }
+
+    h2{
+        font-size: 28px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+
+    /* -----------Aplicamos los estilos mobile al FOOTER----------- */
+    footer{
+        padding: 20px 0px;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'social'
+        'columna2'
+        'columna3'
+        'columna4';
+        height: auto;
+    }
+
+    .logo-footer{
+        width: 400px;
+        margin-top: 12px;
+    }
+
+    .footer-column{
+        text-align: center;
+        margin: 0;
+    }
+
+    .footer-column ul{
+        padding-left: 0;
+    }
+
+    .footer-column ul li a{
+        font-size: 20px;
+    }
+
+    .footer-column2{
+        margin-top: 30px;
+    }
+
+
+    /* Ahora empezamos a aplicar estilo mobile a los MAIN de cada pagina */
+    /* -----------Aplicamos los estilos mobile al MAIN de index.html----------- */
+    .welcome-container-title{
+        padding-top: 40px;
+        width: 80%;
+    }      
+
+    .welcome-container-title p{
+        font-size: 20px;
+    }
+
+    .search-bar{
+        padding: 0 20px 50px 20px;
+        box-sizing: border-box;
+    }
+
+    .style-btn1{
+        font-size: 20px;
+        height: 45px;
+        min-width: 240px;
+    }
+
+    .activities-title{
+        font-size: 26px;
+    }
+
+    .activities-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .activities-list div{
+        margin-bottom: 15px;
+        height: 200px;
+        width: 95%;
+    }
+
+    .why-us-container h2{
+        font-size: 18px;
+    }
+
+    .why-us-items{
+        flex-direction: column;
+    }
+
+    .why-us-items-item{
+        margin-bottom: 45px;
+    }
+
+    .why-us-items-item p{
+        font-size: 20px;
+    }
+
+
+    /* -----------Aplicamos los estilos mobile al MAIN de alquileres.html----------- */
+    .alq-search{
+        position: inherit;
+    }
+    
+    .alq-search-bar{
+        width: 100%;
+        padding: 20px 15px;
+        margin: 0 10px;
+    }
+    
+    .elements{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .search-items{
+        width: 100%;
+        margin-bottom: 8px;
+        font-size: 20px;
+        height: 50px;
+    }
+
+    .alq-main{
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .alq-container{
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 30px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .alq-container-img{
+        width: auto;
+    }
+
+    .alq-container-img img{
+        border: none;
+    }
+
+    .alq-container-title{
+        font-size: 28px;
+    }
+
+    .alq-container-sku{
+        font-size: 20px;
+    }
+
+    .alq-container-desc{
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .alq-container-btn{
+        padding: 0 30px;
+        margin: 20px 0;
+        width: 70%;
+        height: 50px;
+    }
+
+    .alq-container-maps{
+        margin-bottom: 14px;
+        width: 70%;
+    }
+
+
+    /* -----------Aplicamos los estilos mobile al MAIN de mis-reservas.html----------- */
+    .account{
+        height: auto;
+    }
+
+    .account-container{
+        margin: 0;
+        padding: 5%;
+        text-align: center;
+    }
+
+    .account-signup{
+        padding: 30px 0;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .account-signup p, .account-login p{
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    .account-form{
+        margin: 20px 0 0 0;
+    }
+
+    .account-form input{
+        height: 40px;
+    }
+    
+    .account-login{
+        padding: 30px 0;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .style-btn2{
+        height: 50px;
+    }
+
+
+    /* -----------Aplicamos los estilos mobile al MAIN de quienes-somos.html----------- */
+
+    .us-banner, .us-banner-backg{
+        min-height: 300px;
+        height: 300px;
+    }
+    
+    .us-banner-title{
+        font-size: 34px;
+    }
+
+    .us-banner-description{
+        font-size: 20px;
+        padding: 0 20px;
+    }
+
+    .us-expla-text{
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 20px;
+        order: 1; /* Aplicamos reordenamiento de columnas para que siempre sea texto + imagen */
+    }
+
+    .us-expla-img{
+        width: 100%;
+        order: 2; /* Aplicamos reordenamiento de columnas para que siempre sea texto + imagen */
+    }
+
+    .us-counter{
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    .us-counter-item{
+        font-size: 14px;
+        margin-top: 40px;
+    }
+
+    .us-counter-item img{
+        margin: 5px 0;
+        width: 70px;
+    }
+
+
+    /* -----------Aplicamos los estilos mobile al MAIN de contacto.html----------- */
+
+    .contact-sec1{
+        padding: 70px 0 40px 0;
+    }
+    
+    .contact-sec1-items{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .contact-sec1-items-item{
+        margin-bottom: 60px;
+    }
+
+    .contact-sec1-items-item img{
+        width: 70px;
+        margin: 0;
+    }
+
+    .contact-sec2{
+        flex-direction: column;
+        width: 100vw;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .contact-sec2-left{
+        width: 100%;
+        padding: 45px 18px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .contact-sec2-left p{
+        padding: 20px 0 0 0;
+        font-size: 20px;
+    }
+
+    .contact-sec2-left h2{
+        font-size: 28px;
+    }
+
+    .contact-sec2-left ul{
+        margin: 20px 2px 0 25px;
+        text-align: left;
+    }
+
+    .contact-sec2-rigth{
+        width: 100%;
+        padding: 45px 18px;
+        text-align: center;
+        box-sizing: border-box
+    }
+
+    .contact-form{
+        width: 100%;
+    } 
+}  

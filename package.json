@@ -1,0 +1,19 @@
+{
+  "name": "alquileres-vacacionales---carrazza",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoCarrazza/Alquileres-vacacionales---Carrazza.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcoCarrazza/Alquileres-vacacionales---Carrazza/issues"
+  },
+  "homepage": "https://github.com/MarcoCarrazza/Alquileres-vacacionales---Carrazza#readme"
+}

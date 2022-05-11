@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0533ed;">
+        <nav class="navbar navbar-expand-lg navbar-dark menu-shadow">
             <div class="container-fluid">
               <a class="navbar-brand" href="../../index.html">
                 <img src="../images/logo-blanco.png" alt="Logo" class="logo-menu-img">
@@ -23,7 +23,7 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="collapse navbar-collapse nav-position" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                   <a class="nav-link active" aria-current="page" href="./alquileres.html">Alquileres</a>
                   <a class="nav-link" href="./mis-reservas.html">Mis reservas</a>
@@ -36,11 +36,12 @@
     </header>
     <main>
         <section class="alq-search">
+            
             <!--Buscador de alojamientos-->
-            <section class="alq-search-bar">
+            <div class="alq-search-bar">
                 <div class="elements">
                     <!--Lista desplegable "Que estas buscando?"-->
-                    <select name="search-items" class="search-items" id="">
+                    <select name="search-items" class="search-items">
                         <option value="" selected disabled hidden>Que estás buscando?</option>
                         <option value="casas">Casas</option>
                         <option value="departamentos">Departamentos</option>
@@ -48,10 +49,12 @@
                         <option value="bungalows">Bungalows</option>
                         <option value="complejos">Complejos</option>
                     </select>
-                    <!--Menu de calendario-->
-                    <button class="search-items">Check in - Check out</button>
+                    <!--Lista desplegable de calendario-->
+                    <select name="calendar" class="search-items">
+                      <option value="calendar">Check in - Check out</option>
+                    </select>
                     <!--Lista desplegable de cantidad de huespedes-->
-                    <select name="people-set" class="search-items" id="">
+                    <select name="people-set" class="search-items">
                         <option value="" selected disabled hidden>2 personas - 1 habitación</option>
                         <option value="1">1 persona</option>
                         <option value="2">2 persona</option>
@@ -77,10 +80,11 @@
                     <!--Boton BUSCAR-->
                     <button class="style-btn1 search-btn"><strong>Buscar</strong></button>
                 </div>    
-            </section>
+            </div>
         </section>
-        <section class="alq-main">
-            
+        
+        
+        <section class="alq-main">   
             <!-- ALQUILER NRO 1 -->
             <div class="alq-container">
                 <div class="alq-container-img animate__animated animate__zoomIn">
@@ -88,7 +92,7 @@
                     <img src="../images/alquiler-1.jpg" loading="lazy" alt="Fotos de la propiedad">
                 </div>
                 <div class="alq-container-desc">
-                    <h3 class="alq-container-title"> <strong>Casa con pileta p/ 8 pesonas</strong></h3>
+                    <h2 class="alq-container-title"> <strong>Casa con pileta p/ 8 pesonas</strong></h2>
                     <p class="alq-container-sku">Cod: 252612</p>
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item">

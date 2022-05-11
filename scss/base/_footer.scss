@@ -1,0 +1,93 @@
+@import '../components/colors-palette';
+@import '../components/breakpoint';
+
+$logo-footer-size: 250px;
+
+footer{
+  z-index: 1;
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: auto;
+  grid-template-areas: 'social columna2 columna3 columna4';
+  justify-content: space-between;
+  width: 100%;
+  min-height: 200px;
+  background: $color1;
+  .footer-social{
+    grid-area: social;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 25px;
+    .logo-footer{
+      width: $logo-footer-size;
+      @media only screen and (max-width: $break-mobile){
+        width: 400px;
+        margin-top: 12px;
+      }
+    }
+    .social-media{
+      display: flex;
+      justify-content: space-around;
+      padding-top: 15px;
+      width: 40%;
+      img{
+        width: 25px;
+      }
+    }
+  }
+  .footer-column{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    margin: 25px 0;
+    ul{
+      list-style: none;
+      width: 100%;
+      li{
+        margin-bottom: 6px;
+        a{
+          text-decoration: none;
+          font-size: 13px;
+          color: $color3;
+          font-weight: 500;
+          &:hover{
+            font-size: 14px;
+          }
+          @media only screen and (max-width: $break-mobile){
+            font-size: 20px;
+          }
+        }
+      }
+      @media only screen and (max-width: $break-mobile){
+        padding-left: 0;
+      }
+    }
+    @media only screen and (max-width: $break-mobile){
+      text-align: center;
+      margin: 0;
+    }
+  }
+  @media only screen and (max-width: $break-mobile){
+    padding: 20px 0px;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'social'
+    'columna2'
+    'columna3'
+    'columna4';
+    height: auto;
+  }
+}
+
+.footer-column2{
+  grid-area: columna2;
+  @media only screen and (max-width: $break-mobile){
+    margin-top: 30px!important;
+  }
+}
+.footer-column3{grid-area: columna3;}
+.footer-column4{grid-area: columna4;}

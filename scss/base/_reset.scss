@@ -1,0 +1,33 @@
+@import '../components/breakpoint';
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: .08rem;
+}
+
+h1{
+  font-size: 40px;
+}
+
+h2{
+  font-size: 25px;    
+}
+
+@media only screen and (max-width: $break-mobile){
+    
+  /* Definimos tamaño de texto para los elementos h1, h2 y h3 */
+  
+  h1{
+      font-size: 28px;
+  }
+
+  h2{
+      font-size: 28px;
+  }
+
+  h3{
+      font-size: 20px;
+  }
+}
