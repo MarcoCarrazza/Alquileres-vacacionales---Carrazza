@@ -1,0 +1,114 @@
+@import '../utilities/colors-palette';
+@import '../utilities/breakpoint';
+
+main{
+  .contact-sec1{
+    padding: 70px 0;
+    @media only screen and (max-width: $break-mobile){
+      padding: 70px 0 40px 0;
+    }
+    h1{
+      text-align: center;
+      padding-bottom: 50px;
+    }
+    .contact-sec1-items{
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 15%;
+      text-align: center;
+      @media only screen and (max-width: $break-mobile){
+        flex-direction: column;
+        padding: 0;
+      }
+      .contact-sec1-items-item{
+        @media only screen and (max-width: $break-mobile){
+          margin-bottom: 60px;
+        }
+        img{
+          width: 100px;
+          margin-bottom: 15px;
+          transition-duration: .7s;
+          &:hover{
+            width: 107px;
+            transition-duration: .7s;
+          }
+          @media only screen and (max-width: $break-mobile){
+            width: 70px;
+            margin: 0;
+          }
+        }
+      }      
+    }
+  }
+  .contact-sec2{
+    display: flex;
+    justify-content: center;
+    background-image: url(.././src/images/alquiler-1.jpg);
+    background-position: center;
+    background-size:cover;
+    color: $color3;
+    @media only screen and (max-width: $break-mobile){
+      flex-direction: column;
+      width: 100vw;
+      padding: 0;
+      overflow: hidden;
+    }
+    .contact-sec2-left{
+      width: 50%;
+      background-image:linear-gradient(rgba($color1, .9), $color1) ;
+      padding: 45px 0 30px 7%;
+      @media only screen and (max-width: $break-mobile){
+        width: 100%;
+        padding: 45px 18px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      p{
+        font-size: 14px;
+        text-align: justify;
+        padding-right: 55px;
+        padding-top: 20px;
+        @media only screen and (max-width: $break-mobile){
+          padding: 20px 0 0 0;
+          font-size: 20px;
+        }
+      }
+      h2{
+        @media only screen and (max-width: $break-mobile){
+          font-size: 28px;
+        }
+      }
+      ul{
+        margin: 25px 0 0 40px;
+        font-size: 14px;
+        @media only screen and (max-width: $break-mobile){
+          margin: 20px 2px 0 25px;
+          text-align: left;
+        }
+        li{
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .contact-sec2-rigth{
+      width: 50%;
+      padding: 45px 0 30px 7%;
+      background: rgba($color1, .83);
+      @media only screen and (max-width: $break-mobile){
+        width: 100%;
+        padding: 45px 18px;
+        text-align: center;
+        box-sizing: border-box;
+      }
+      .contact-form{
+        background: orange;
+        width: 80%;
+        height: 300px;
+        border-radius: 20px;
+        @media only screen and (max-width: $break-mobile){
+          width: 100%;
+        }
+      }
+    }
+  }
+}

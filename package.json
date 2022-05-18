@@ -1,19 +1,29 @@
 {
   "name": "alquileres-vacacionales---carrazza",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "3.1.0",
+  "description": "Desarrollo de sitio web para empresa de alquileres vacacionales. Este proyecto solo desarrolla el front-end del sitio. No se incluye ninguna funcionalidad del sitio (no se incluye JS).",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch scss/style.scss css/style.css",
+    "install-nodemon": "npm install -D node-sass nodemon",
+    "install-sass": "npm install -g sass"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MarcoCarrazza/Alquileres-vacacionales---Carrazza.git"
   },
-  "author": "",
+  "author": {
+    "name": "Marco Carrazza",
+    "email": "carrazzamarco@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MarcoCarrazza/Alquileres-vacacionales---Carrazza/issues"
   },
-  "homepage": "https://github.com/MarcoCarrazza/Alquileres-vacacionales---Carrazza#readme"
+  "homepage": "https://github.com/MarcoCarrazza/Alquileres-vacacionales---Carrazza#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
 }

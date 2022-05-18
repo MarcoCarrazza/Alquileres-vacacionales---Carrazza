@@ -1,0 +1,59 @@
+@import '../utilities/colors-palette';
+@import '../utilities/breakpoint';
+@import '../base/reset';
+@import '../components/btn';
+
+.activities{
+  margin: auto;
+  display: table;
+  padding-bottom: 18px;
+  h2{
+    text-align: center;
+    margin: 47px 0;
+  }
+  .activities-list{
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 250px);
+    gap: 9px 9px;
+    grid-template-areas: 'img2 img2 img1' 'img3 img4 img4' 'img5 img5 img6';
+    @media only screen and (max-width: $break-mobile){
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    .image-container{
+      overflow: hidden;
+      box-shadow: 2px 2px 2px 1px rgba($color4, 0.2);
+      background: $color1;
+      @media only screen and (max-width: $break-mobile){
+        margin-bottom: 15px;
+        height: 200px;
+        width: 95%;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: ease-in .6s;
+        &:hover{
+          transform: scale(1.05);
+          transition: ease-in .6s;
+          opacity: .6;
+        }
+      }
+    }
+  }
+}
+
+.img-x1{grid-area: img1;}
+.img-x2{grid-area: img2;}
+.img-x3{grid-area: img3;}
+.img-x4{grid-area: img4;}
+.img-x5{grid-area: img5;}
+.img-x6{grid-area: img6;}

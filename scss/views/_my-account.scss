@@ -1,0 +1,74 @@
+@import '../utilities/colors-palette';
+@import '../utilities/breakpoint';
+@import '../base/reset';
+@import '../components/form';
+
+main{
+  .account{
+    background-image: url(.././src/images/hostel.jpg);
+    background-size: cover;
+    height: calc(100vh - 80px);
+    @media only screen and (max-width: $break-mobile){
+      height: auto;
+    }
+    .account-container{
+      display: flex;
+      justify-content: center;
+      padding: 50px 30px;
+      @media only screen and (max-width: $break-mobile){
+        margin: 0;
+        padding: 5%;
+        text-align: center;
+      }
+      #my-account-title{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+        color: $color3;
+        font-weight: 600;
+        letter-spacing: 5px;
+        text-shadow: 2px 2px 8px $color4;
+      }
+      .account-signup{
+        background-color: $color1;
+        width: 50%;
+        padding: 20px;
+        border-radius: 15px 0 0 15px;
+        color: $color3;
+        @media only screen and (max-width: $break-mobile){
+          width: 100%;
+          padding: 30px 0;
+          border-radius: 15px 15px 0 0;
+        }
+        p{
+          @media only screen and (max-width: $break-mobile){
+            font-size: $font-mobile;
+          }
+        }
+        .account-form{
+          @extend %form1;
+        }
+      }
+      .account-login{
+        background-color: $color2;
+        width: 50%;
+        padding: 20px;
+        border-radius: 0 15px 15px 0;
+        @media only screen and (max-width: $break-mobile){
+          width: 100%;
+          padding: 30px 0;
+          border-radius: 0 0 15px 15px;
+        }
+        p{
+          @media only screen and (max-width: $break-mobile){
+            font-size: $font-mobile;
+          }
+        }
+        .account-form{
+          @extend %form1;
+        }
+      }
+    }
+  }
+}

@@ -287,15 +287,6 @@ footer {
   min-height: 200px;
   background: #0533ed;
 }
-@media only screen and (max-width: 768px) {
-  footer {
-    padding: 20px 0px;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: 1fr;
-    grid-template-areas: "social" "columna2" "columna3" "columna4";
-    height: auto;
-  }
-}
 footer .footer-social {
   grid-area: social;
   display: flex;
@@ -328,20 +319,9 @@ footer .footer-column {
   align-items: flex-start;
   margin: 25px 0;
 }
-@media only screen and (max-width: 768px) {
-  footer .footer-column {
-    text-align: center;
-    margin: 0;
-  }
-}
 footer .footer-column ul {
   list-style: none;
   width: 100%;
-}
-@media only screen and (max-width: 768px) {
-  footer .footer-column ul {
-    padding-left: 0;
-  }
 }
 footer .footer-column ul li {
   margin-bottom: 6px;
@@ -358,6 +338,26 @@ footer .footer-column ul li a:hover {
 @media only screen and (max-width: 768px) {
   footer .footer-column ul li a {
     font-size: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  footer .footer-column ul {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  footer .footer-column {
+    text-align: center;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  footer {
+    padding: 20px 0px;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "social" "columna2" "columna3" "columna4";
+    height: auto;
   }
 }
 
@@ -487,11 +487,6 @@ main .account .account-container .account-login .account-form button:hover, main
   top: 10px;
   z-index: 100;
 }
-@media only screen and (max-width: 768px) {
-  .alq-search {
-    position: inherit;
-  }
-}
 .alq-search .alq-search-bar {
   display: flex;
   justify-content: center;
@@ -514,12 +509,6 @@ main .account .account-container .account-login .account-form button:hover, main
   display: flex;
   justify-content: space-between;
 }
-@media only screen and (max-width: 768px) {
-  .alq-search div {
-    flex-direction: column;
-    width: 100%;
-  }
-}
 .alq-search div select {
   height: 35px;
   width: 200px;
@@ -535,14 +524,20 @@ main .account .account-container .account-login .account-form button:hover, main
     height: 50px;
   }
 }
-.alq-main {
-  margin: 0 5vw;
+@media only screen and (max-width: 768px) {
+  .alq-search div {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 768px) {
-  .alq-main {
-    margin: 0;
-    box-sizing: border-box;
+  .alq-search {
+    position: inherit;
   }
+}
+
+.alq-main {
+  margin: 0 5vw;
 }
 .alq-main .alq-container {
   display: flex;
@@ -550,26 +545,11 @@ main .account .account-container .account-login .account-form button:hover, main
   margin-bottom: 10px;
   border-radius: 20px;
 }
-@media only screen and (max-width: 768px) {
-  .alq-main .alq-container {
-    flex-direction: column;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 30px;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-}
 .alq-main .alq-container .alq-container-img {
   width: 40%;
   height: auto;
   margin: 10px;
   overflow: hidden;
-}
-@media only screen and (max-width: 768px) {
-  .alq-main .alq-container .alq-container-img {
-    width: auto;
-  }
 }
 .alq-main .alq-container .alq-container-img img {
   width: 100%;
@@ -584,17 +564,14 @@ main .account .account-container .account-login .account-form button:hover, main
     border: none;
   }
 }
+@media only screen and (max-width: 768px) {
+  .alq-main .alq-container .alq-container-img {
+    width: auto;
+  }
+}
 .alq-main .alq-container .alq-container-desc {
   width: 60%;
   padding: 15px 10px 15px 25px;
-}
-@media only screen and (max-width: 768px) {
-  .alq-main .alq-container .alq-container-desc {
-    width: 100%;
-    padding: 0 15px;
-    box-sizing: border-box;
-    text-align: center;
-  }
 }
 .alq-main .alq-container .alq-container-desc .alq-container-title {
   font-size: 22px;
@@ -629,6 +606,30 @@ main .account .account-container .account-login .account-form button:hover, main
   .alq-main .alq-container .alq-container-desc .alq-container-maps {
     margin-bottom: 14px;
     width: 70%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .alq-main .alq-container .alq-container-desc {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .alq-main .alq-container {
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .alq-main {
+    margin: 0;
+    box-sizing: border-box;
   }
 }
 
@@ -694,7 +695,7 @@ main .contact-sec2 {
 }
 main .contact-sec2 .contact-sec2-left {
   width: 50%;
-  background-image: linear-gradient(rgba(5, 51, 237, 0.9), #0533ed);
+  background-image: linear-gradient(rgba(5, 51, 237, 0.4), #0533ed);
   padding: 45px 0 30px 7%;
 }
 @media only screen and (max-width: 768px) {
@@ -805,8 +806,8 @@ main .us-banner .us-banner-backg {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
 }
 @media only screen and (max-width: 768px) {
   main .us-banner .us-banner-backg {
@@ -870,7 +871,7 @@ main .us-expla .us-expla-img img {
 main .us-counter {
   margin: 65px 22%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 @media only screen and (max-width: 768px) {
   main .us-counter {
@@ -882,9 +883,9 @@ main .us-counter {
 main .us-counter .us-counter-item {
   width: 33%;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   font-weight: 700;
 }
@@ -1015,16 +1016,6 @@ main .account .account-container {
     padding: 5%;
     text-align: center;
   }
-}
-main .account .account-container #my-account-title {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  margin: 30px 0;
-  color: #fff;
-  font-weight: 600;
-  letter-spacing: 5px;
-  text-shadow: 2px 2px 8px #000;
 }
 main .account .account-container .account-signup {
   background-color: #0533ed;
@@ -1434,40 +1425,4 @@ main .account .account-container .account-signup .account-form button:hover, mai
   padding-bottom: 10px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Nunito", sans-serif;
-  letter-spacing: 0.08rem;
-}
-
-h1 {
-  font-size: 40px;
-}
-
-h2 {
-  font-size: 25px;
-}
-
-@media only screen and (max-width: 768px) {
-  /* Definimos tamaño de texto para los elementos h1, h2 y h3 */
-  h1 {
-    font-size: 28px;
-  }
-
-  h2 {
-    font-size: 28px;
-  }
-
-  h3 {
-    font-size: 20px;
-  }
-}
-#alq-title {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  margin: 60px 0;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.cs.map */

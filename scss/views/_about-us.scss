@@ -1,0 +1,98 @@
+@import '../utilities/colors-palette';
+@import '../utilities/breakpoint';
+@import '../base/reset';
+@import '../layout/display';
+
+main{
+  .us-banner{
+    background-image: url(../src/images/hostel.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    @media only screen and (max-width: $break-mobile){
+      min-height: auto;
+    }
+    .us-banner-backg{
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color4, .4);
+      @include flex(flex, center);
+      flex-direction: column;
+      @media only screen and (max-width: $break-mobile){
+        height: auto;
+      }
+      h1{
+        color: $color3;
+        margin-top: 100px;
+        @media only screen and (max-width: $break-mobile){
+          margin-top: 60px;
+        }
+      }
+      p{
+        color: $color3;
+        margin-top: 20px;
+        padding: 0 15%;
+        margin-bottom: 100px;
+        @media only screen and (max-width: $break-mobile){
+          font-size: $font-mobile;
+          padding: 0 20px;
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+  .us-expla{
+    margin: 40px 10%;
+    .us-expla-text{
+      text-align: justify;
+      @media only screen and (max-width: $break-mobile){
+        width: 100%;
+        font-size: $font-mobile;
+        margin-bottom: 20px;
+        order: 1; /* Aplicamos reordenamiento de columnas para que siempre sea texto + imagen */
+      }
+    }
+    .us-expla-img{
+      object-fit: fill;
+      @include flex(flex, center);
+      height: 300px;
+      @media only screen and (max-width: $break-mobile){
+        width: 100%;
+        order: 2; /* Aplicamos reordenamiento de columnas para que siempre sea texto + imagen */
+      }
+      img{
+        width: 100%;
+        border-radius: 5px;
+      }
+    }
+  }
+  .us-counter{
+    margin: 65px 22%;
+    @include flex(flex, center);
+    @media only screen and (max-width: $break-mobile){
+      flex-direction: column;
+      margin: 0;
+      align-items: center;
+    }
+    .us-counter-item{
+      width: 33%;
+      @include flex(flex, center);
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      font-weight: 700;
+      @media only screen and (max-width: $break-mobile){
+        font-size: $font-mobile;
+        margin-top: 40px;
+      }
+      img{
+        width: 100px;
+        margin: 13px 0;
+        @media only screen and (max-width: $break-mobile){
+          margin: 5px 0;
+          width: 70px;
+        }
+      }
+    }
+  }
+}

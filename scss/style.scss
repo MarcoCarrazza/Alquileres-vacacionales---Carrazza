@@ -1,8 +1,22 @@
 @import '../scss/base/reset';
-@import '../scss/base/body-layout';
-@import '../scss/base/header';
-@import '../scss/base/footer';
+
+@import '../scss/layout/body-layout';
+@import '../scss/layout/header';
+@import '../scss/layout/header-index';
+@import '../scss/layout/footer';
+
 @import '../scss/components/search-bar';
-@import '../scss/base/alq-container';
+@import '../scss/components/alq-container';
+
+@import '../scss/views/contact';
+@import '../scss/views/about-us';
+@import '../scss/views/my-account';
+@import '../scss/views/activities-index';
+@import '../scss/views/why-us';
+@import '../scss/views/alquileres';
+
+
+
+
 
 
