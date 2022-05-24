@@ -25,7 +25,7 @@
       }
       p{
         @media only screen and (max-width: $break-mobile){
-          font-size: 24px;
+          font-size: $font-mobile;
         }
       }
       img{

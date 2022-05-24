@@ -15,21 +15,21 @@ h2{
   font-size: 25px;    
 }
 
-$font-mobile: 24px;
+$font-mobile: 14px;
 
 @media only screen and (max-width: $break-mobile){
     
   /* Definimos tamaño de texto para los elementos h1, h2 y h3 */
   
   h1{
-      font-size: 28px;
+      font-size: 24px;
   }
 
   h2{
-      font-size: 28px;
+      font-size: 18px;
   }
 
   h3{
-      font-size: 20px;
+      font-size: $font-mobile;
   }
 }

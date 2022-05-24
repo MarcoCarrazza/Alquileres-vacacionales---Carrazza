@@ -70,7 +70,7 @@ main{
         padding-top: 20px;
         @media only screen and (max-width: $break-mobile){
           padding: 20px 0 0 0;
-          font-size: 20px;
+          font-size: $font-mobile;
         }
       }
       h2{
@@ -101,10 +101,9 @@ main{
         box-sizing: border-box;
       }
       .contact-form{
-        background: orange;
         width: 80%;
-        height: 300px;
-        border-radius: 20px;
+        height: auto;
+        @extend %form1;
         @media only screen and (max-width: $break-mobile){
           width: 100%;
         }

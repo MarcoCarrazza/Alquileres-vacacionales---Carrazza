@@ -40,7 +40,7 @@
             font-size: 20px;;
           }
         }
-        button{
+        .btn1{
           @extend %btn1;
           margin-top: 25px;
           padding: 0 15px;
@@ -74,11 +74,11 @@
           @media only screen and (max-width: $break-mobile){
             width: 100%;
             margin-bottom: 8px;
-            font-size: 20px;
+            font-size: $font-mobile;
             height: 50px;
           }
         }
-        button{
+        .btn1{
           @extend %btn1;
         }
       }

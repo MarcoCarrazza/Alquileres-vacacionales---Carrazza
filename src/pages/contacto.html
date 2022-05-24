@@ -62,26 +62,40 @@
         <section class="contact-sec2">
             <div class="contact-sec2-left">
                 <h2>Querés publicar tu propio alquiler?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos excepturi dolor cupiditate corporis nulla velit omnis illo. Quas illum accusamus, sit corporis autem hic quia. Labore, dolore. Eos, optio aspernatur.</p>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                </ul>
+                <p>Si sos propietario de alguna vivienda o servicio de hospedaje en nuestra ciudad, y te gustaría ofrecerla en nuestra plataforma, completá el siguiente formulario y nos pondremos en contacto contigo para brindarte toda la información que necesites para comenzar a operar con nosotros.</p>
+                <p>Te brindaremos toda la información que necesites sobre las formas de reserva, comisiones, cancelaciones, y demás dudas que tengas para que puedas trabajar con nosotros de forma segura y confiable.</p>
             </div>
             <div class="contact-sec2-rigth">
                 <h2>Acá irá un formulario de contacto</h2>
-                <div class="contact-form">
-                    <!-- Aquí se insertará el futuro formulario de contacto -->
-                </div>
+                <form action="/codigo-servidor/" method="post">
+                    <div class="contact-form">
+                        <label for="name" required>Nombre:</label>
+                        <input type="text" id="name">
+                        <label for="surname" required>Apellido:</label>
+                        <input type="text" id="surname">
+                        <label for="phone" required>Teléfono:</label>
+                        <input type="text" id="phone">
+                        <label for="property" required>Tipo de propiedad:</label>
+                        <select name="property" id="property">
+                            <option value="" selected disabled hidden>Seleccione una opción</option>
+                            <option value="casas">Casas</option>
+                            <option value="departamentos">Departamentos</option>
+                            <option value="cabanas">Cabañas</option>
+                            <option value="bungalows">Bungalows</option>
+                            <option value="complejos">Complejos</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
     <footer>
         <div class="footer-social"> <!--Columna de footer 1-->
-            <img src="../../src/images/logo-blanco.png" class="logo-footer" alt="Logo">
+            <a href="../../index.html">
+                <img src="../../src/images/logo-blanco.png" class="logo-footer" alt="Logo">
+            </a>
             <div class="social-media">
                 <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                     <img src="../../src/images/facebook.png" alt="Facebook">

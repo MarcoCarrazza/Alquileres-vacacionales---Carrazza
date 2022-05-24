@@ -1,5 +1,6 @@
 @import '../utilities/colors-palette';
 @import '../utilities/breakpoint';
+@import '../base/reset';
 
 .alq-main{
   margin: 0 5vw;
@@ -67,7 +68,8 @@
         border: solid 1px $color4;
         font-size: 22px;
         .accordion-text{
-          font-size: 14px;
+          font-size: $font-mobile;
+          text-align: start;
         }
       }
       .alq-container-btn{

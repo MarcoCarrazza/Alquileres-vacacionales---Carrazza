@@ -1,11 +1,12 @@
 @import '../utilities/colors-palette';
 @import '../utilities/breakpoint';
 @import './btn';
-@import '../layout/display';
+@import '../base/reset';
 
 .alq-search{
   width: 100vw;
-  @include flex(flex, center);
+  display:flex;
+  justify-content:center;
   margin: 20px 0;
   position: sticky;
   top:10px;
@@ -14,7 +15,8 @@
     position: inherit;
   }
   .alq-search-bar{
-    @include flex(flex, center);
+    display:flex;
+    justify-content:center;
     padding: 15px 25px;
     border-radius: 30px;
     align-content: center;
@@ -29,7 +31,8 @@
   }
   div{
     width: 800px;
-    @include flex(flex, space-between);
+    display:flex;
+    justify-content:space-between;
     @media only screen and (max-width: $break-mobile){
       flex-direction: column;
       width: 100%;
@@ -43,7 +46,7 @@
       @media only screen and (max-width: $break-mobile){
         width: 100%;
         margin-bottom: 8px;
-        font-size: 20px;
+        font-size: $font-mobile;
         height: 50px;
       }
     }

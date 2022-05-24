@@ -10,6 +10,9 @@
   h2{
     text-align: center;
     margin: 47px 0;
+    @media only screen and (max-width: $break-mobile){
+      padding: 0 10%;
+    }
   }
   .activities-list{
     width: 80vw;

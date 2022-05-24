@@ -3,24 +3,27 @@
 @import '../base/reset';
 
 %form1{
+  box-sizing: border-box;
   margin-top: 20px;
-  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
   @media only screen and (max-width: $break-mobile){
-    margin: 20px 0 0 0;
-    display: flex;
-    flex-direction: column;
+    margin: 20px 0 0 0;  
   }
-  p{
+  label{
     font-size: 15px;
+    width: 100%;
     @media only screen and (max-width: $break-mobile){
       font-size: $font-mobile;
       padding: 0 10px;
     }
   }
-  input{
-    width: 80%;
+  input[type="text"], input[type="mail"], input[type="password"], select{
+    width: 85%;
     height: 30px;
     margin-bottom: 10px;
+    background: rgba($color3,.8);
+    border: 2px solid $color3;
     @media only screen and (max-width: $break-mobile){
       height: 40px;
       margin: 0 10%;
@@ -28,5 +31,6 @@
   }
   button{
     @extend %btn3;
+    margin-top: 20px;
   }
 }

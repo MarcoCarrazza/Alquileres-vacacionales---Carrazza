@@ -15,7 +15,7 @@ header{
           width: $logo-menu-size;
           padding-left: 6vw;
           @media only screen and (max-width: $break-mobile){
-            width: calc($logo-menu-size + 100px);
+            width: 60vw;
           }
         }
       }

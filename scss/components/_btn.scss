@@ -29,7 +29,7 @@
   height: 35px;
   color: $color3;
   border: solid 2px $color3;
-  margin: 15px 25px 15px 0;
+  margin: 25px 25px 15px 0;
   border-radius: 30px;
   &:hover{
     background: $color3;
@@ -48,6 +48,7 @@
 %btn3{
   background: $color3;
   padding: 5px 10px;
+  width: 50%;
   height: 35px;
   color: $color1;
   border: solid 2px $color3;
@@ -63,6 +64,5 @@
     height: 50px;
     font-size: $font-mobile;
     margin: 50px 25% 0 25%;
-    width: 50%;
   }
 }

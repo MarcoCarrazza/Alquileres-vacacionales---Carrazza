@@ -1,6 +1,5 @@
 @import '../utilities/colors-palette';
 @import '../utilities/breakpoint';
-@import '../utilities/text-footer';
 
 $logo-footer-size: 250px;
 
@@ -36,7 +35,7 @@ footer{
     .logo-footer{
       width: $logo-footer-size;
       @media only screen and (max-width: $break-mobile){
-        width: 400px;
+        width: 70vw;
         margin-top: 12px;
       }
     }
@@ -68,15 +67,15 @@ footer{
       li{
         margin-bottom: 6px;
         a{
-          text-decoration: map-get($text, deco);
-          font-size: map-get($text, size);
-          color: map-get($text, color);
-          font-weight: map-get($text, weight);
+          text-decoration: none;
+          font-size: 13px;
+          color: $color3;
+          font-weight: 500;
           &:hover{
-            font-size: map-get($text, size-hover);
+            font-size: 14px;
           }
           @media only screen and (max-width: $break-mobile){
-            font-size: 20px;
+            font-size: $font-mobile;
           }
         }
       }
