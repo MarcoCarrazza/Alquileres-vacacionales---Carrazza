@@ -9,6 +9,8 @@
   background-image: url(.././src/images/carnaval.jpg); /*Imagen de fondo del Header*/
   background-size: cover;
   background-position: center;
+  overflow-x: hidden;
+  width: 100vw;
   .header-container{
     /*Creamos este cotainer para agregar una capa de color sobre la imagen del Header*/
     background-image: linear-gradient($color1, rgba($color1,.7));

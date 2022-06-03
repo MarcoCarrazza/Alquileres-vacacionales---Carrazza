@@ -3,4 +3,5 @@ body{
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
   grid-template-areas: 'header' 'main' 'footer';
+  overflow-x: hidden;
 }

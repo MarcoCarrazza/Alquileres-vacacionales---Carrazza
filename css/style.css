@@ -33,6 +33,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
   grid-template-areas: "header" "main" "footer";
+  overflow-x: hidden;
 }
 
 header {
@@ -40,6 +41,7 @@ header {
   grid-area: header;
   width: 100vw;
   background-color: #0533ed;
+  overflow-x: hidden;
 }
 header nav div a img {
   width: 250px;
@@ -195,6 +197,8 @@ main .account .account-container .account-login .contact-form button:hover, main
   /*Imagen de fondo del Header*/
   background-size: cover;
   background-position: center;
+  overflow-x: hidden;
+  width: 100vw;
 }
 #header-index .header-container {
   /*Creamos este cotainer para agregar una capa de color sobre la imagen del Header*/
@@ -286,6 +290,7 @@ footer {
   width: 100%;
   min-height: 200px;
   background: #0533ed;
+  overflow-x: hidden;
 }
 @media only screen and (max-width: 768px) {
   footer {

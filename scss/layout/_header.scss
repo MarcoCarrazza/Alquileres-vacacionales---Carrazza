@@ -8,6 +8,7 @@ header{
   grid-area: header;
   width: 100vw;
   background-color: $color1;
+  overflow-x: hidden;
   nav{
     div{
       a{
